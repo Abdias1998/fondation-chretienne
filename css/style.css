@@ -190,8 +190,17 @@
     background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../img/humanitaire.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header-ministere {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../img/ministere.jpg) center center no-repeat;
+    background-size: cover;
+}
 
-.page-header .page-header-humanitaire .breadcrumb-item+.breadcrumb-item::before {
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+}
+.page-header-humanitaire .breadcrumb-item+.breadcrumb-item::before {
     color: #999999;
 }
 
