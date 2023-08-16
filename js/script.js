@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const emailInput = document.getElementById("email");
+    const emailInput = document.getElementById("emails");
     const email = emailInput.value;
 
     try {
@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       );
 
-      //   if (response.ok) {
-      //     alert("Subscription successful!");
-      //     emailInput.value = "";
-      //   } else {
-      //     const errorData = await response.json();
-      //     console.error("Erreur de souscription:", errorData);
-      //   }
+      if (response.ok) {
+        alert("Subscription successful!");
+        emailInput.value = "";
+      } else {
+        const errorData = await response.json();
+        console.error("Erreur de souscription:", errorData);
+      }
       console.log(response);
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
