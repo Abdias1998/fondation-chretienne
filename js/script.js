@@ -19,13 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       );
 
-      if (response.ok) {
-        alert("Subscription successful!");
-        emailInput.value = "";
-      } else {
-        const errorData = await response.json();
-        console.error("Erreur de souscription:", errorData);
-      }
+      //   if (response.ok) {
+      //     alert("Subscription successful!");
+      //     emailInput.value = "";
+      //   } else {
+      //     const errorData = await response.json();
+      //     console.error("Erreur de souscription:", errorData);
+      //   }
+      console.log(response);
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
     }
