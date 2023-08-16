@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const subscribeForm = document.getElementById("subscribeForm");
+  const messageParagraph = document.getElementById("messageParagraph");
 
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -20,16 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (response.ok) {
-        alert("Subscription successful!");
+        messageParagraph.textContent = "Abonnement à la newsletter réussie !";
         emailInput.value = "";
       } else {
         const errorData = await response.json();
         console.error("Erreur de souscription:", errorData.message);
-        alert("Erreur de souscription:", errorData.message);
+        messageParagraph.textContent =
+          "Erreur de souscription: " + errorData.message;
       }
       console.log(response);
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
+      messageParagraph.textContent =
+        "Erreur lors de la requête. Veuillez réessayer plus tard.";
     }
   });
 });
