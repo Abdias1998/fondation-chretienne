@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         emailInput.value = "";
       } else {
         const errorData = await response.json();
-        console.error("Erreur de souscription:", errorData);
+        console.error("Erreur de souscription:", errorData.message);
+        alert("Erreur de souscription:", errorData.message);
       }
       console.log(response);
     } catch (error) {
