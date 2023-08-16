@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://backend-lagraceparle.onrender.com/api/v1/subscribe-donateur/",
+        "https://backend-lagraceparle.onrender.com/api/v1/subscribe-donateur",
         {
           method: "POST",
           headers: {
@@ -24,11 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         emailInput.value = "";
       } else {
         const errorData = await response.json();
-        alert("Subscription failed: " + errorData.message);
+        console.error("Erreur de souscription:", errorData);
       }
     } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again later.");
+      console.error("Erreur lors de la requête:", error);
     }
   });
 });
