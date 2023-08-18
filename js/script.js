@@ -4,9 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = document.getElementById("text");
   const textLong = document.getElementById("textLong");
   const submit = document.getElementById("submitButton");
+  const ancienTexteBouton = submit.textContent; // Sauvegarde du texte original du bouton
+
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    submit.disabled = true;
+
+    // Mettre à jour le texte du bouton pendant la requête
+    submit.textContent = "Envoi en cours...";
+    submit.disabled = true; // Désactiver le bouton pendant la requête
+
     const emailInput = document.getElementById("emails");
     const email = emailInput.value;
 
@@ -55,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
           "Erreur de souscription: " + errorData.message;
         messageParagraph.classList.remove("success");
         messageParagraph.classList.add("error");
-        submit.disabled = false;
       }
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
@@ -63,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Erreur lors de la requête. Veuillez réessayer plus tard. " + error;
       messageParagraph.classList.remove("success");
       messageParagraph.classList.add("error");
+    } finally {
+      // Réactiver le bouton et rétablir le texte original
       submit.disabled = false;
+      submit.textContent = ancienTexteBouton;
     }
   });
 });
