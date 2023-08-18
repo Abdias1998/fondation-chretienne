@@ -72,6 +72,9 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .hidden {
+  display: none;
+}
 </style>
 
     <!-- Spinner Start -->
@@ -264,7 +267,9 @@
           <option value="other">Cap fm</option>
         </select>
         
-        <button type="submit">Soumettre</button>
+        <button id="submitButton" type="submit" class="btn-load">Soumettre</button>
+        <button id="loadingButton" class="btn-load hidden" disabled>Chargement...</button>
+        
       </form>
     <!-- Footer Start -->
     <div

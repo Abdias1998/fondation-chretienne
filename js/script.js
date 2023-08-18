@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const subscribeForm = document.getElementById("subscribeForm");
   const messageParagraph = document.getElementById("messageParagraph");
-  const submitButton = document.querySelector('button[type="submit"]');
+  const submitButton = document.getElementById("submitButton");
+  const loadingButton = document.getElementById("loadingButton");
 
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // Désactiver le formulaire et le bouton de soumission
-    subscribeForm.classList.add("disabled");
+    // Désactiver le bouton de soumission et afficher le bouton de chargement
     submitButton.disabled = true;
+    loadingButton.classList.remove("hidden");
 
     const emailInput = document.getElementById("emails");
     const email = emailInput.value;
@@ -39,17 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.textContent = "Abonnement à la newsletter réussi !";
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
-        emailInput.value = "";
-        nameInput.value = ""; // Réinitialiser la valeur du champ "name"
         audioSelect.value = "";
         videoSelect.value = "";
+        emailInput.value = "";
+        nameInput.value = ""; // Réinitialiser la valeur du champ "name"
 
-        // Réactiver le formulaire et le bouton de soumission après 3 secondes (3000 ms)
+        // Réactiver le bouton de soumission et cacher le bouton de chargement après 3 secondes (3000 ms)
         setTimeout(() => {
-          subscribeForm.classList.remove("disabled");
           submitButton.disabled = false;
+          loadingButton.classList.add("hidden");
           messageParagraph.textContent = "";
-        }, 5000);
+        }, 3000);
       } else {
         const errorData = await response.json();
         console.error("Erreur de souscription:", errorData.message);
@@ -58,9 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.classList.remove("success");
         messageParagraph.classList.add("error");
 
-        // Réactiver le formulaire et le bouton de soumission
-        subscribeForm.classList.remove("disabled");
+        // Réactiver le bouton de soumission et cacher le bouton de chargement
         submitButton.disabled = false;
+        loadingButton.classList.add("hidden");
       }
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
@@ -69,9 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
       messageParagraph.classList.remove("success");
       messageParagraph.classList.add("error");
 
-      // Réactiver le formulaire et le bouton de soumission
-      subscribeForm.classList.remove("disabled");
+      // Réactiver le bouton de soumission et cacher le bouton de chargement
       submitButton.disabled = false;
+      loadingButton.classList.add("hidden");
     }
   });
 });
