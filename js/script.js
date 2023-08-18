@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const subscribeForm = document.getElementById("subscribeForm");
   const messageParagraph = document.getElementById("messageParagraph");
   const text = document.getElementById("text");
+  const textLong = document.getElementById("textLong");
 
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -37,10 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
         emailInput.value = "";
         nameInput.value = "";
         subscribeForm.style.display = "none";
-        text.innerHTML = "<p>Merci beaucoup pour votre inscription. </p>";
-        ("<p>Votre email a été ajouté à notre liste de contacts mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation.Veuillez cliquer sur le bouton bleu afin de confirmer votre abonnement. </p>");
-        ("<p> Nous espérons que vous serez encouragé par la Pensée de Joyce. </p>");
-        ("<p>Votre équipe La Grâce Parle</p>");
+        textLong.style.display = "none";
+        text.innerHTML =
+          "<p>Merci beaucoup pour votre inscription. </p>" +
+          "<p>Votre email a été ajouté à notre liste de contacts mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation. Veuillez cliquer sur le bouton bleu afin de confirmer votre abonnement.</p>" +
+          "<p>Nous espérons que vous serez encouragé par la Pensée de Joyce.</p>" +
+          "<p>Votre équipe La Grâce Parle</p>";
 
         setTimeout(() => {
           messageParagraph.textContent = "";
