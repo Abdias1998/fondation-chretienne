@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingButton.classList.remove("hidden");
 
     const emailInput = document.getElementById("emails");
-    const email = emailInput.value;
+    const email = emailInput?.value;
 
     // Récupérer les valeurs des champs "name", "audio" et "video"
     const nameInput = document.getElementById("name");
-    const names = nameInput.value;
+    const names = nameInput?.value;
 
     const audioSelect = document.getElementById("audio");
-    const audio = audioSelect.value;
+    const audio = audioSelect?.value;
 
     const videoSelect = document.getElementById("video");
-    const video = videoSelect.value;
+    const video = videoSelect?.value;
 
     try {
       const response = await fetch(
