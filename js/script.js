@@ -1,28 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
   const subscribeForm = document.getElementById("subscribeForm");
   const messageParagraph = document.getElementById("messageParagraph");
-  const submitButton = document.getElementById("submitButton");
-  const loadingButton = document.getElementById("loadingButton");
+  const submitButton = document.querySelector('button[type="submit"]');
 
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // Désactiver le bouton de soumission et afficher le bouton de chargement
+    // Désactiver le formulaire et le bouton de soumission
+    subscribeForm.classList.add("disabled");
     submitButton.disabled = true;
-    loadingButton.classList.remove("hidden");
 
     const emailInput = document.getElementById("emails");
-    const email = emailInput?.value;
+    const email = emailInput.value;
 
     // Récupérer les valeurs des champs "name", "audio" et "video"
     const nameInput = document.getElementById("name");
-    const names = nameInput?.value;
+    const names = nameInput.value;
 
     const audioSelect = document.getElementById("audio");
-    const audio = audioSelect?.value;
+    const audio = audioSelect.value;
 
     const videoSelect = document.getElementById("video");
-    const video = videoSelect?.value;
+    const video = videoSelect.value;
 
     try {
       const response = await fetch(
@@ -40,15 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.textContent = "Abonnement à la newsletter réussi !";
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
-        audioSelect?.value = "";
-        videoSelect?.value = "";
-        emailInput?.value = "";
-        nameInput?.value = ""; // Réinitialiser la valeur du champ "name"
+        emailInput.value = "";
+        nameInput.value = ""; // Réinitialiser la valeur du champ "name"
+        audioSelect.value = ""; // Réinitialiser la valeur du champ "name"
+        videoSelect.value = ""; // Réinitialiser la valeur du champ "name"
 
-        // Réactiver le bouton de soumission et cacher le bouton de chargement après 3 secondes (3000 ms)
+        // Réactiver le formulaire et le bouton de soumission après 3 secondes (3000 ms)
         setTimeout(() => {
+          subscribeForm.classList.remove("disabled");
           submitButton.disabled = false;
-          loadingButton.classList.add("hidden");
           messageParagraph.textContent = "";
         }, 3000);
       } else {
@@ -59,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.classList.remove("success");
         messageParagraph.classList.add("error");
 
-        // Réactiver le bouton de soumission et cacher le bouton de chargement
+        // Réactiver le formulaire et le bouton de soumission
+        subscribeForm.classList.remove("disabled");
         submitButton.disabled = false;
-        loadingButton.classList.add("hidden");
       }
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
@@ -70,9 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
       messageParagraph.classList.remove("success");
       messageParagraph.classList.add("error");
 
-      // Réactiver le bouton de soumission et cacher le bouton de chargement
+      // Réactiver le formulaire et le bouton de soumission
+      subscribeForm.classList.remove("disabled");
       submitButton.disabled = false;
-      loadingButton.classList.add("hidden");
     }
   });
 });
