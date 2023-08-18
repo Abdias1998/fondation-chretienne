@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.textContent = "Abonnement à la newsletter réussi !";
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
-        audioSelect.value = "";
-        videoSelect.value = "";
-        emailInput.value = "";
-        nameInput.value = ""; // Réinitialiser la valeur du champ "name"
+        audioSelect?.value = "";
+        videoSelect?.value = "";
+        emailInput?.value = "";
+        nameInput?.value = ""; // Réinitialiser la valeur du champ "name"
 
         // Réactiver le bouton de soumission et cacher le bouton de chargement après 3 secondes (3000 ms)
         setTimeout(() => {
