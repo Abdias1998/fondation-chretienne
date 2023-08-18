@@ -218,7 +218,7 @@
             </li>
 
             <li class="breadcrumb-item text-primary" aria-current="page">
-              Abonnez-vous à la Méditation Quotidienne
+                Abonnez-vous à la Méditation Quotidienne dès maintenant !
             </li>
           </ol>
         </nav>
@@ -226,19 +226,15 @@
     </div>
     <!-- Page Header End -->
 
-    <h1 class="">Commencez votre journée avec des vitamines spirituelles !</h1>
-    <p>
-      Chaque jour, Joyce partage une pensée encourageante basée sur un verset de
-      la Bible.
+    <h1 class="" style="text-align: center;background: #ffc400;">Initiez votre journée en prenant des vitamines spirituelles !</h1>
+    <p style="text-align: justify;">
+        Chaque journée, le Ministère chrétien "La Grâce Parle" propose une réflexion inspirante en s'appuyant sur un passage biblique.
     </p>
     <p>
-      À la fin de chaque méditation, nous vous invitons à faire une prière
-      personnelle. Réservez ce temps spécial que vous passez avec Dieu !
+        À la fin de chaque méditation, nous vous encourageons à prendre part à une prière personnelle. Accordez une attention particulière à ce moment que vous partagez avec Dieu !
     </p>
     <p>
-      Vous n'avez pas le temps de lire la méditation ? Vous pouvez aussi
-      l'écouter chaque jour... dès le matin au réveil, en faisant votre jogging,
-      ou en voiture...
+        Si le temps vous manque pour lire la méditation, vous avez également la possibilité de l'écouter chaque jour... que ce soit dès le matin au réveil, pendant votre jogging ou même en voiture...
     </p>
     <p>Veuillez remplir tous les champs suivants :</p>
     <form id="subscribeForm">
@@ -252,16 +248,16 @@
         <select id="video" name="video" >
           <option value="" disabled selected>Choisissez un programme Tv</option>
           <option value="ortb">Ortb</option>
-          <option value="youtube">youtube</option>
-          <option value="ado">Ado</option>
+          <option value="youtube">youtube(Brigade de prière)</option>
+          <option value="facebook">Facebook(Brigade de prière)</option>
         </select>
         
         <label for="audio">Programmes AUDIO</label>
         <select id="audio" name="audio" >
           <option value="" disabled selected>Choisissez un programme Radio</option>
-          <option value="maranatha">Maranatha</option>
-          <option value="tokpa">Radio Tokpa</option>
-          <option value="other">Cap fm</option>
+          <option value="maranatha">Maranatha(Brigade de prière)</option>
+          <option value="tokpa">podcast</option>
+        
         </select>
         
         <button type="submit">Soumettre</button>
@@ -332,23 +328,31 @@
             <a class="btn btn-link" href="service.html">Nos services</a>
             <a class="btn btn-link" href="mentions.html">Termes et condition</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Recevoir une méditation tous les jours</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <!-- <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email"> -->
-              <p class="form-control bg-transparent w-100 py-3 ps-4 pe-5">
-                Newsletter
-              </p>
-              <button
-                id="openModalButton"
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                Je m'abonne
-              </button>
+
+          <form class="col-lg-3 col-md-6" id="subscribeForm">
+            <div>
+              <h5 class="text-light mb-4">Newsletter</h5>
+              <p>Recevrez nos dernières actualités et mises à jour.</p>
+              <div class="position-relative mx-auto" style="max-width: 800px">
+                <p id="messageParagraph"></p>
+                <!-- <input
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  type="email"
+                  id="emails"
+                  name="email"
+                  required
+                  placeholder="Votre email"
+                /> -->
+                <a
+                  id="openModalButton"
+                  href="newsletter.html"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Je m'abonne
+                </a>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <div class="container-fluid copyright">

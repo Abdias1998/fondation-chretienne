@@ -37,8 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         emailInput.value = "";
         nameInput.value = "";
         subscribeForm.style.display = "none";
-        text.innerHTML =
-          "<p>Merci de votre inscription à la Pensée La Grace Parle. Pour activer votre abonnement gratuit, la loi RGPD nous oblige à présent à vous demander de confirmer votre abonnement. Pour cela, il vous suffit de cliquer sur le lien suivant :</p>";
+        text.innerHTML = "<p>Merci beaucoup pour votre inscription. </p>";
+        ("<p>Votre email a été ajouté à notre liste de contacts mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation.Veuillez cliquer sur le bouton bleu afin de confirmer votre abonnement. </p>");
+        ("<p> Nous espérons que vous serez encouragé par la Pensée de Joyce. </p>");
+        ("<p>Votre équipe La Grâce Parle</p>");
 
         setTimeout(() => {
           messageParagraph.textContent = "";

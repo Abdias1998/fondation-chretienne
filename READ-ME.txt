@@ -8,3 +8,11 @@
 
   =>  Author Website   : https://htmlcodex.com
   .\git-script.ps1 "Commit automatisé"
+
+  Nous avons reçu votre désinscription.
+
+Votre email a bien été retiré de notre liste de contacts. Vous pouvez bien entendu vous inscrire à nouveau à la Pensée de Joyce à tout moment.
+
+Pour toute question, veuillez nous écrire un email.
+
+Votre équipe Joyce Meyer
