@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const messageParagraph = document.getElementById("messageParagraph");
   const text = document.getElementById("text");
   const textLong = document.getElementById("textLong");
-
+  const submit = document.getElementById("submitButton");
   subscribeForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-
+    submit.disabled = true;
     const emailInput = document.getElementById("emails");
     const email = emailInput.value;
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         text.innerHTML =
           "<p>Merci beaucoup pour votre inscription. </p>" +
           "<p>Votre email a été ajouté à notre liste de contacts mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation. Veuillez cliquer sur le bouton bleu afin de confirmer votre abonnement.</p>" +
-          "<p>Nous espérons que vous serez encouragé par la Pensée de Joyce.</p>" +
+          "<p>Nous espérons que vous serez encouragé par la Pensée de La Grâce Parle.</p>" +
           "<p>Votre équipe La Grâce Parle</p>";
 
         setTimeout(() => {
@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Erreur de souscription: " + errorData.message;
         messageParagraph.classList.remove("success");
         messageParagraph.classList.add("error");
+        submit.disabled = false;
       }
     } catch (error) {
       console.error("Erreur lors de la requête:", error);
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Erreur lors de la requête. Veuillez réessayer plus tard. " + error;
       messageParagraph.classList.remove("success");
       messageParagraph.classList.add("error");
+      submit.disabled = false;
     }
   });
 });
