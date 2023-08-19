@@ -212,7 +212,7 @@
               faciliter votre compréhension de notre mission et de nos actions.
             </p>
 
-            <form>
+            <form id="subscribeForm">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -220,10 +220,10 @@
                       type="text"
                       required
                       class="form-control"
-                      id="name"
+                      id="names"
                       placeholder="Votre Nom"
                     />
-                    <label for="name">Votre Nom</label>
+                    <label for="names">Votre Nom</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -232,10 +232,10 @@
                       required
                       type="email"
                       class="form-control"
-                      id="email"
+                      id="emails"
                       placeholder="Votre email"
                     />
-                    <label for="email">Votre email</label>
+                    <label for="emails">Votre email</label>
                   </div>
                 </div>
                 <div class="col-12">
@@ -263,7 +263,11 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary py-2 px-3 me-3">
+                  <button
+                    id="submitButton"
+                    type="submit"
+                    class="btn btn-primary py-2 px-3 me-3"
+                  >
                     Envoyer
                     <div
                       class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
@@ -274,6 +278,7 @@
                 </div>
               </div>
             </form>
+            <p id="messageParagraph"></p>
           </div>
           <div
             class="col-lg-6 wow fadeIn"
