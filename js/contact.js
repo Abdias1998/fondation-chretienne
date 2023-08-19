@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (response.ok) {
-        messageParagraph.textContent = `Nous avons reçu votre message ${names}, nous vous reviendrons au plus vite.`;
+        messageParagraph.textContent = `Nous avons reçu votre message, nous vous reviendrons au plus vite.`;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
         emailInput.value = "";
