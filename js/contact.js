@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
           messageParagraph.textContent = "";
-        }, 5000);
+        }, 10000);
       } else {
         const errorData = await response.json();
         console.error("Erreur de souscription:", errorData.message);
