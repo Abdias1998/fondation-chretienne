@@ -37,12 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (response.ok) {
-        messageParagraph.textContent = response.message;
+        messageParagraph.textContent = `Nous avons reçu votre message ${names}, nous vous reviendrons au plus vite.`;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
         emailInput.value = "";
         nameInput.value = "";
-        console.log(response);
+        subject.value = "";
+        messageSelect.value = "";
 
         setTimeout(() => {
           messageParagraph.textContent = "";
