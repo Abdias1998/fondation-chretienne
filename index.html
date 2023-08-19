@@ -9,7 +9,6 @@
 
     <!-- Favicon -->
     <link href="img/logo.jfif" rel="icon" />
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,6 +37,7 @@
     <!-- Template Stylesheet -->
     <link href="css/modal.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
   </head>
 
   <body>
@@ -631,7 +631,7 @@
             <div class="h-100 bg-white p-5">
               <form>
                 <div class="row g-3">
-                  <div class="col-12">
+                  <!-- <div class="col-12">
                     <div class="form-floating">
                       <input
                         type="text"
@@ -652,7 +652,7 @@
                       />
                       <label for="email">Votre Email</label>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-12">
                     <div class="btn-group d-flex justify-content-around">
                       <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
@@ -720,14 +720,18 @@
                                 </div> -->
                   <br />
                   <div class="col-12">
-                    <button class="btn btn-primary px-5" style="height: 60px">
+                    <!-- <button
+                      id="pay-btn"
+                      class="btn btn-primary px-5"
+                      style="height: 60px"
+                    >
                       Poursuivre la transaction
                       <div
                         class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
                       >
                         <i class="fa fa-arrow-right"></i>
                       </div>
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </form>
@@ -853,6 +857,10 @@
     ></a>
 
     <!-- JavaScript Libraries -->
+
+    <script type="text/javascript">
+      FedaPay.init("#pay-btn", { public_key: "YOUR_API_PUBLIC_KEY" });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
