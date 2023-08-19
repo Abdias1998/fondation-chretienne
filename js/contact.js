@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.classList.add("success");
         emailInput.value = "";
         nameInput.value = "";
+        console.log(response);
 
         setTimeout(() => {
           messageParagraph.textContent = "";
