@@ -57,15 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         const errorData = await response.json();
         console.error("Erreur de souscription:", errorData.message);
-        messageParagraph.textContent =
-          "Erreur de souscription: " + errorData.message;
+        messageParagraph.textContent = errorData.message;
         messageParagraph.classList.remove("success");
         messageParagraph.classList.add("error");
       }
     } catch (error) {
-      console.error("Erreur lors de la requête:", error);
-      messageParagraph.textContent =
-        "Erreur lors de la requête. Veuillez réessayer plus tard. " + error;
+      messageParagraph.textContent = error;
       messageParagraph.classList.remove("success");
       messageParagraph.classList.add("error");
     } finally {
