@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Contact-La Grâce Parle Fondation</title>
+    <title>Faq-La Grâce Parle Fondation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -36,10 +36,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
+    <link href="css/faq.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
+
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -151,7 +151,7 @@
                 >
               </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
           <div class="d-none d-lg-flex ms-2">
             <a class="btn btn-outline-primary py-2 px-3" href="donate.html">
@@ -170,169 +170,150 @@
 
     <!-- Page Header Start -->
     <div
-      class="container-fluid page-header-contact mb-5 wow fadeIn"
+      class="container-fluid page-header-faq mb-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container text-center">
         <h1 class="display-4 text-white animated slideInDown mb-4">
-          Contactez-nous
+        FAQ
         </h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center mb-0">
             <li class="breadcrumb-item">
               <a class="text-white" href="index.html">Accueil</a>
             </li>
-            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
-            <li class="breadcrumb-item text-primary active" aria-current="page">
-              Contactez-nous
+
+            <li class="breadcrumb-item text-primary" aria-current="page">
+           Foire Aux Questions
             </li>
           </ol>
         </nav>
       </div>
     </div>
     <!-- Page Header End -->
-
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div
-              class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-            >
-              Contactez-nous
-            </div>
-            <h1 class="display-6 mb-5">
-              Si vous avez des questions, veuillez nous contacter
-            </h1>
-            <p class="mb-4">
-              Si vous avez des questions ou désirez obtenir de plus amples
-              informations, veuillez simplement nous contacter. Nous sommes là
-              pour vous fournir les réponses dont vous avez besoin et pour
-              faciliter votre compréhension de notre mission et de nos actions.
-            </p>
-
-            <form id="subscribeForm">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      required
-                      class="form-control"
-                      id="names"
-                      placeholder="Votre Nom"
-                    />
-                    <label for="names">Votre Nom</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      required
-                      type="email"
-                      class="form-control"
-                      id="emails"
-                      placeholder="Votre email"
-                    />
-                    <label for="emails">Votre email</label>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-floating">
-                    <!-- <input
-                      required
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Sujet"
-                    />
-                    <label for="subject">Sujet</label> -->
-
-                    <select class="form-control" id="subject" name="subject">
-                      <option value="" disabled selected>
-                        Choisissez un sujet
-                      </option>
-                      <option value="Foi et Croyances ">
-                        Foi et Croyances
-                      </option>
-                      <option value="Activités de la Fondation">
-                        Activités de la Fondation
-                      </option>
-                      <option value="Dons et Soutien">Dons et Soutien</option>
-                      <option value="Engagement Chrétien">
-                        Engagement Chrétien
-                      </option>
-                      <option value="Événements et Rassemblements ">
-                        Événements et Rassemblements
-                      </option>
-                      <option value="Engagement Social et Humanitaire ">
-                        Engagement Social et Humanitaire
-                      </option>
-                      <option value="Questions Théologiques ">
-                        Questions Théologiques
-                      </option>
-                      <option value="Contact et Support ">
-                        Contact et Support
-                      </option>
-                      <option value="Autres">Autres</option>
-                    </select>
-                    <label for="subject" name="subject">Sujet</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      required
-                      class="form-control"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style="height: 100px"
-                    ></textarea>
-                    <label for="message">Votre Message</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button
-                    id="submitButton"
-                    type="submit"
-                    class="btn btn-primary py-2 px-3 me-3"
-                  >
-                    Envoyer
-                    <div
-                      class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                    >
-                      <i class="fa fa-arrow-right"></i>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </form>
-            <p id="messageParagraph"></p>
-          </div>
-          <div
-            class="col-lg-6 wow fadeIn"
-            data-wow-delay="0.5s"
-            style="min-height: 450px"
-          >
-            <div class="position-relative rounded overflow-hidden h-100">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1667.1664456324079!2d2.4434762930437057!3d6.366552788362985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10235523b3b782a7%3A0x93ae0207759f5365!2sRue%201403%2C%20Cotonou!5e0!3m2!1sfr!2sbj!4v1692020954815!5m2!1sfr!2sbj"
-                width="800"
-                height="600"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+    <div class="faq-container">
+        <h1>Foi et Croyances :</h1>
+        <div class="faq-item">
+          <h2 class="question">
+            Question 1 : Quelles sont les croyances fondamentales du
+            christianisme?
+          </h2>
+          <div class="answer">
+            <p> Les croyances fondamentales du christianisme incluent la foi en un Dieu unique en trois personnes (la Trinité), la croyance en Jésus-Christ comme le Sauveur et le Fils de Dieu, la conviction en la Bible comme Parole inspirée de Dieu, et l'importance de la grâce divine pour le salut.</p>
           </div>
         </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 2 : Qui est Jésus-Christ et quel est son rôle dans la foi chrétienne?
+          </h2>
+          <div class="answer">
+            <p>
+                Jésus-Christ est le Fils de Dieu incarné, qui est venu sur terre pour offrir le salut à travers sa mort et sa résurrection. Son rôle est d'être le Médiateur entre Dieu et les humains, offrant le pardon des péchés et la vie éternelle à ceux qui croient en lui.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 3 : Qu'est-ce que la Trinité?
+          </h2>
+          <div class="answer">
+            <p>
+                La Trinité est la croyance en un Dieu unique qui existe en trois personnes : le Père, le Fils (Jésus-Christ) et le Saint-Esprit. Chaque personne est pleinement Dieu, mais il n'y a qu'un seul Dieu. La Trinité reflète la nature complexe et unie de Dieu.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 4 : Quelle est la signification de la Bible pour les chrétiens?
+          </h2>
+          <div class="answer">
+            <p>
+                La Bible est la Parole inspirée de Dieu pour les chrétiens. Elle contient des enseignements, des histoires, des prophéties et des conseils qui guident la foi et la vie chrétienne. Les chrétiens considèrent la Bible comme une source d'autorité et de direction spirituelle.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Ajoutez plus de questions et réponses ici -->
       </div>
-    </div>
-    <!-- Contact End -->
-
+   
+    <div class="faq-container">
+        <h1>Activités de la Fondation :</h1>
+        <div class="faq-item">
+          <h2 class="question">
+            Question 1 :Quelles sont les principales activités de la fondation?
+          </h2>
+          <div class="answer">
+            <p>  Notre fondation chrétienne s'engage dans diverses activités telles que des programmes de sensibilisation communautaire, des projets humanitaires, des sessions d'enseignement biblique, des événements de culte et de louange, ainsi que des initiatives pour promouvoir les valeurs chrétiennes.</p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 2 :Comment puis-je m'impliquer ou participer aux initiatives de la fondation?
+          </h2>
+          <div class="answer">
+            <p>
+                Vous pouvez vous impliquer en participant à nos événements, en rejoignant nos groupes d'étude biblique, en offrant vos compétences pour des projets humanitaires, ou en faisant un don pour soutenir nos activités. Consultez notre site web pour plus d'informations sur la manière de vous engager.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 3 : Quels sont les objectifs à long terme de la fondation?
+          </h2>
+          <div class="answer">
+            <p>
+                Nos objectifs à long terme comprennent l'expansion de nos initiatives de bienfaisance, l'établissement de partenariats avec d'autres organisations pour avoir un impact plus large, la création de ressources d'enseignement en ligne pour la croissance spirituelle, et la construction d'une communauté chrétienne solidaire.
+            </p>
+          </div>
+        </div>
+  
+   
+        <!-- Ajoutez plus de questions et réponses ici -->
+      </div>
+   
+   
+    <div class="faq-container">
+        <h1>Dons et Soutien :</h1>
+        <div class="faq-item">
+          <h2 class="question">
+            Question 1 :Comment puis-je faire un don à la fondation?
+          </h2>
+          <div class="answer">
+            <p>   Vous pouvez faire un don en ligne via notre site web en utilisant notre plateforme sécurisée de paiement. Nous acceptons également les dons en personne lors de nos événements. Les dons en argent, en nature ou en service sont tous appréciés et contribuent à nos activités.</p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 2 :À quoi sont destinés les fonds collectés par la fondation?
+          </h2>
+          <div class="answer">
+            <p>
+                Les fonds collectés sont utilisés pour financer nos programmes humanitaires, nos événements communautaires, la création de ressources spirituelles, les frais opérationnels et la croissance de nos initiatives. Nous sommes déterminés à gérer les fonds de manière transparente et responsable.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <h2 class="question">
+            Question 3 : Puis-je faire un don en nature ou en service plutôt qu'en argent?
+          </h2>
+          <div class="answer">
+            <p>
+                Absolument. En plus des dons financiers, nous accueillons également les dons en nature tels que des fournitures, de la nourriture pour les projets humanitaires, ainsi que les compétences et les talents que vous pouvez offrir pour soutenir nos activités. Contactez-nous pour discuter des options de don en nature.
+            </p>
+          </div>
+        </div>
+  
+     
+        <!-- Ajoutez plus de questions et réponses ici -->
+      </div>
+   
     <!-- Footer Start -->
     <div
       class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn"
@@ -406,13 +387,13 @@
               <div class="position-relative mx-auto" style="max-width: 800px">
                 <p id="messageParagraph"></p>
                 <!-- <input
-                 class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                 type="email"
-                 id="emails"
-                 name="email"
-                 required
-                 placeholder="Votre email"
-               /> -->
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  type="email"
+                  id="emails"
+                  name="email"
+                  required
+                  placeholder="Votre email"
+                /> -->
                 <a
                   id="openModalButton"
                   href="newsletter.html"
@@ -455,9 +436,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
-
+    <script src="js/script.js"></script>
     <!-- Template Javascript -->
-    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
   </body>
 </html>
