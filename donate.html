@@ -37,6 +37,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -264,10 +265,10 @@
                       <input
                         type="text"
                         class="form-control bg-light border-0"
-                        id="name"
+                        id="names"
                         placeholder="Your Name"
                       />
-                      <label for="name">Your Name</label>
+                      <label for="names">Your Name</label>
                     </div>
                   </div>
                   <div class="col-12">
@@ -290,7 +291,10 @@
                         id="btnradio1"
                         checked
                       />
-                      <label class="btn btn-light py-3" for="btnradio1"
+                      <label
+                        id="pay-btn"
+                        class="btn btn-light py-3"
+                        for="btnradio1"
                         >$100</label
                       >
 
@@ -461,5 +465,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const nameInput = document.getElementById("names");
+      const names = nameInput.value;
+      FedaPay.init("#pay-btn", {
+        public_key: "pk_live_IBOVDokIe2uHDaLJGzOSH-8-",
+        transaction: {
+          amount: 100,
+          description: "Buy my product",
+        },
+        customer: {
+          email: "johndoe@gmail.com",
+          lastname: names,
+          firstname: "John",
+        },
+      });
+    </script>
   </body>
 </html>
