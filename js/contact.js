@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageSelect = document.getElementById("message");
     const message = messageSelect.value;
 
+    const tel = phoneNumberInput.value;
+
     try {
       const response = await fetch(
         "https://backend-lagraceparle.onrender.com/api/v2/contact",
@@ -45,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, names, subject, message }),
+          body: JSON.stringify({ email, names, subject, message, tel }),
         }
       );
 
@@ -55,12 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.classList.add("success");
         emailInput.value = "";
         nameInput.value = "";
-        subject.value = "";
+        subjectSelect.value = "";
+        phoneNumberInput.value = "";
         messageSelect.value = "";
 
         setTimeout(() => {
           messageParagraph.textContent = "";
-        }, 10000);
+        }, 40000);
       } else {
         const errorData = await response.json();
         console.error("Erreur de souscription:", errorData.message);
