@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Aide-humanitaire-La Grâce Parle-Fondation</title>
+    <title>Blog d'article - La Grâce Parle Fondation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -38,6 +38,80 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
+    <style>
+      /* ... Autres styles ... */
+
+      /* ... Autres styles ... */
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .article-container,
+      .blog-list {
+        padding: 10px;
+      }
+
+      /* Utilisation de Flexbox pour les écrans larges */
+      @media screen and (min-width: 768px) {
+        .container {
+          display: flex;
+        }
+
+        .article-container {
+          flex: 2;
+          padding-right: 20px;
+        }
+
+        .blog-list {
+          flex: 1;
+          background-color: #f4f4f4;
+        }
+      }
+
+      /* Utilisation de mise en colonnes pour les écrans plus petits */
+      @media screen and (max-width: 767px) {
+        .article-container,
+        .blog-list {
+          width: 100%;
+        }
+      }
+
+      .article-container {
+        flex: 2;
+        padding-right: 20px;
+      }
+
+      .blog-list {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+
+      .blog-list h3 {
+        font-size: 1.2rem;
+      }
+
+      .blog-list ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .blog-list li {
+        margin-bottom: 5px;
+      }
+
+      .blog-list a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      p {
+        text-align: justify;
+      }
+    </style>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
@@ -132,6 +206,8 @@
           <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.html" class="nav-item nav-link">Accueil</a>
             <a href="about.html" class="nav-item nav-link">À propos</a>
+
+            >
             <!-- <a href="causes.html" class="nav-item nav-link">Causes</a> -->
             <div class="nav-item dropdown">
               <a
@@ -147,7 +223,9 @@
                 <a href="donate.html" class="dropdown-item"
                   >Faire un don à la fondation</a
                 >
-                <a href="blog.html" class="dropdown-item">Blog d'article</a>
+                <a href="blog.html" class="dropdown-item active"
+                  >Blog d'article</a
+                >
                 <!-- <a href="team.html" class="dropdown-item">Our Team</a> -->
                 <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
                 <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
@@ -156,7 +234,7 @@
             <div class="nav-item dropdown">
               <a
                 href="#"
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
                 >Nos actions</a
               >
@@ -167,7 +245,7 @@
                 <a href="fanfare.html" class="dropdown-item"
                   >L'Orchestre Philharmonie</a
                 >
-                <a href="humanitaire.html" class="dropdown-item active"
+                <a href="humanitaire.html" class="dropdown-item"
                   >Aide Humanitaire et Education</a
                 >
               </div>
@@ -208,23 +286,21 @@
 
     <!-- Page Header Start -->
     <div
-      class="container-fluid page-header-humanitaire mb-5 wow fadeIn"
+      class="container-fluid page-header-article mb-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container text-center">
         <h1 class="display-4 text-white animated slideInDown mb-4">
-          Service Humanitaire
+          Blog d'article
         </h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center mb-0">
             <li class="breadcrumb-item">
-              <a class="text-white" href="index.html">Home</a>
+              <a class="text-white" href="index.html">Accueil</a>
             </li>
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#">Pages</a>
-            </li>
+            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Service
+              Bog d'article
             </li>
           </ol>
         </nav>
@@ -232,119 +308,108 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about-1.jpg"
-                alt=" Service Humanitaire"
-                style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about.jpg"
-                alt=" Service Humanitaire"
-                style="width: 200px; height: 200px"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100">
-              <div
-                class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-              >
-                À propos de nous
-              </div>
-              <h1 class="display-6 mb-5">
-                Nous aidons les personnes dans le besoin dans le monde entier
-              </h1>
-              <div
-                class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
-              >
-                <p class="text-dark mb-2">
-                  Animé par la foi, j'ai fondé cette fondation pour semer
-                  l'amour, l'espoir et l'entraide à travers chaque action
-                </p>
-                <span class="text-primary">Samuel Dalum, Fondateur & Ceo</span>
-              </div>
-              <p id="humanitaire" class="mb-5">
-                Dans un monde marqué par la diversité et l'interconnexion
-                croissante des cultures, des défis humanitaires et des besoins
-                urgents se profilent à l'horizon. Au cœur de cette réalité
-                complexe, notre engagement envers les personnes dans le besoin
-                brille comme un phare d'espoir et d'action. À travers des
-                efforts à l'échelle mondiale, nous avons pris sur nous la
-                mission vitale de tendre la main à ceux qui luttent contre
-                l'adversité. Qu'il s'agisse de fournir une aide immédiate en cas
-                de catastrophe, de nourrir les affamés, de guérir les malades ou
-                d'émanciper les communautés marginalisées, notre détermination
-                est ancrée dans une volonté inébranlable de bâtir un avenir plus
-                brillant pour tous. Rejoignez-nous dans cette quête humanitaire
-                alors que nous explorons les rouages de notre engagement mondial
-                à apporter un changement positif à la vie des personnes
-                vulnérables à travers le monde.
-              </p>
-              <h2>L'Étendue de Notre Engagement Humanitaire</h2>
-              <p class="mb-5">
-                Notre engagement envers les personnes dans le besoin s'étend aux
-                quatre coins du monde, touchant des vies dans des communautés
-                éloignées et des zones défavorisées. Que ce soit par le biais de
-                programmes de secours en cas de catastrophe, d'aide alimentaire,
-                de soins de santé ou d'éducation, nous nous efforçons d'apporter
-                un changement positif durable là où il est le plus nécessaire.
-              </p>
-              <h2>Partenariats Globaux pour un Impact Décuplé</h2>
-              <p class="mb-5">
-                Nous croyons en la puissance des partenariats pour maximiser
-                notre impact. En collaborant avec des organisations locales, des
-                gouvernements et d'autres acteurs humanitaires, nous renforçons
-                nos efforts pour répondre efficacement aux besoins complexes des
-                populations vulnérables. Ensemble, nous construisons des ponts
-                vers un avenir meilleur, en rassemblant nos ressources et notre
-                expertise.
-              </p>
-              <h2>Inspirer le Changement par l'Empowerment</h2>
-              <p class="mb-5">
-                Au-delà de l'aide immédiate, notre objectif est d'autonomiser
-                les individus et les communautés pour qu'ils puissent
-                transformer leurs propres vies. Nous investissons dans des
-                programmes de développement durable qui fournissent des
-                compétences, des formations et des ressources, permettant ainsi
-                aux bénéficiaires de devenir les agents du changement dans leur
-                propre réalité. En favorisant leur croissance personnelle et
-                professionnelle, nous créons un impact qui se propage au-delà
-                des frontières géographiques.
-              </p>
-              <p class="mb-5">
-                Notre engagement envers le soulagement de la souffrance et
-                l'amélioration des conditions de vie transcende les limites
-                géographiques et culturelles. Ensemble, nous faisons une
-                différence significative en apportant un message d'espoir, de
-                compassion et de solidarité à ceux qui ont le plus besoin
-                d'aide.
-              </p>
-
-              <a class="btn btn-outline-primary py-2 px-3" href="donate.html">
-                Faire un don
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <div class="article-container">
+        <article>
+          <h2>Ebenezer 2 - Une Expérience de Foi et de Louange</h2>
+          <img
+            src="img/ebenezer.jpg"
+            style="width: 150px; border-radius: 100%; height: 150px"
+            alt="Ebenezer 2 Event"
+          />
+          <p>
+            L'événement chrétien tant attendu, Ebenezer 2, est sur le point
+            d'illuminer les cœurs et les âmes de milliers de croyants. Organisé
+            par le Centre de Prière "La Grâce Parle", cet événement promet une
+            expérience inoubliable de foi, de prière, de louange et
+            d'enseignement biblique. Après le succès retentissant de la première
+            édition, l'équipe derrière l'événement revient avec encore plus de
+            ferveur et de dévouement pour offrir un programme enrichissant et
+            édifiant.
+          </p>
+          <br />
+          <h3>Renouvellement de la Foi : Un Moment de Prière Puissant</h3>
+          <p>
+            Le cœur d'Ebenezer 2 réside dans la puissance de la prière. Le
+            premier jour de l'événement sera dédié à un moment de prière intense
+            et profonde. Les participants auront l'opportunité de se rassembler
+            dans l'unité pour élever leurs voix et leurs cœurs vers le
+            Très-Haut. Que ce soit pour des besoins personnels, des défis
+            mondiaux ou simplement pour louer Dieu, ce moment de prière
+            renouvellera la foi de chacun et renforcera les liens de la
+            communauté.
+          </p>
+          <h3>Adoration Céleste : Élever les Âmes par la Musique</h3>
+          <p>
+            La louange et l'adoration occuperont une place centrale à Ebenezer
+            2. Une équipe de musiciens talentueux guidera les participants dans
+            un voyage céleste à travers la musique et les chants de louange. Les
+            moments d'adoration offriront une occasion unique de se connecter
+            avec Dieu d'une manière profonde et personnelle. Les mélodies
+            enveloppantes et les paroles inspirantes élèveront les âmes et
+            créeront un espace propice à la rencontre divine.
+          </p>
+          <h3>Enseignement Biblique : Nourrir l'Esprit et l'Intellect</h3>
+          <p>
+            L'enseignement biblique sera au cœur d'Ebenezer 2, avec des sessions
+            animées par des enseignants et des pasteurs respectés. Ces moments
+            d'enseignement plongeront les participants dans les Écritures
+            saintes, apportant compréhension et illumination aux vérités
+            bibliques. Des sujets tels que la foi, la grâce, l'amour et l'espoir
+            seront abordés, offrant des perspectives nouvelles et profondes sur
+            la vie chrétienne. Les participants seront encouragés à poser des
+            questions et à dialoguer, créant ainsi un environnement
+            d'apprentissage dynamique.
+          </p>
+          <h3>Surprises Divines : Une Touche de Magie Spirituelle</h3>
+          <p>
+            Ebenezer 2 réserve également son lot de surprises divines. Les
+            organisateurs gardent secrètes les détails, mais il est promis que
+            ces moments inattendus apporteront joie, émerveillement et une
+            touche de magie spirituelle à l'événement. Que ce soit à travers des
+            témoignages inspirants, des moments de partage en petits groupes ou
+            des actes de bienveillance, les surprises divines seront une partie
+            intégrante de l'expérience Ebenezer 2.
+          </p>
+          <h3>
+            Communauté Unie : Rencontrer de Nouveaux Frères et Sœurs en Christ
+          </h3>
+          <p>
+            L'une des beautés d'un événement comme Ebenezer 2 est la possibilité
+            de créer des liens avec d'autres croyants. La communion fraternelle
+            et l'esprit d'unité seront encouragés tout au long de l'événement.
+            Les participants auront l'occasion de rencontrer de nouveaux frères
+            et sœurs en Christ, d'échanger des expériences et de partager leur
+            parcours de foi. Les amitiés formées lors de l'événement pourraient
+            bien durer toute une vie.
+          </p>
+          <br /><br />
+          <p>
+            En somme, Ebenezer 2 s'annonce comme un événement chrétien
+            exceptionnel, rempli de moments de prière puissants, d'adoration
+            inspirante, d'enseignement biblique édifiant et de surprises
+            divines. Organisé par le Centre de Prière "La Grâce Parle", cet
+            événement promet de renouveler la foi de chacun, de nourrir les âmes
+            et d'établir des liens durables au sein de la communauté chrétienne.
+            Que vous soyez à la recherche d'une connexion plus profonde avec
+            Dieu, d'une compréhension approfondie de la Bible ou simplement
+            d'une expérience spirituelle enrichissante, Ebenezer 2 offre tout
+            cela et bien plus encore. Préparez-vous à vivre une expérience
+            transformante et à repartir avec un cœur comblé et une foi
+            renouvelée.
+          </p>
+        </article>
+      </div>
+      <div class="blog-list">
+        <h3>Autres Articles</h3>
+        <ul>
+          <li><a href="#">Article 1</a></li>
+          <li><a href="#">Article 2</a></li>
+          <li><a href="#">Article 3</a></li>
+          <!-- Ajoutez d'autres articles ici -->
+        </ul>
       </div>
     </div>
-    <!-- About End -->
 
     <!-- Footer Start -->
     <div
@@ -470,8 +535,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/script.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
