@@ -38,6 +38,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
@@ -323,126 +324,128 @@
             </p>
           </div>
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div class="h-100 bg-white p-5">
-              <form>
-                <div class="row g-3">
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control bg-light border-0"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Votre Nom</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control bg-light border-0"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Votre Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="btn-group d-flex justify-content-around">
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio1"
-                        checked
-                      />
-                      <label class="btn btn-light py-3" for="btnradio1"
-                        >$30</label
-                      >
-
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio2"
-                      />
-                      <label class="btn btn-light py-3" for="btnradio2"
-                        >$50</label
-                      >
-
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio3"
-                      />
-                      <label class="btn btn-light py-3" for="btnradio3"
-                        >$100</label
-                      >
-
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio4"
-                      />
-                      <label class="btn btn-light py-3" for="btnradio4"
-                        >$300</label
-                      >
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio5"
-                      />
-                      <label class="btn btn-light py-3" for="btnradio5"
-                        >Montant libre</label
-                      >
-                    </div>
+            <div class="h-100 bg-secondary p-5">
+           <!-- <button>   <a class="pay-btn"
+            data-transaction-amount="971"
+            data-transaction-description="Buy my product"
+            data-customer-email="johndoe@gmail.com"
+            data-customer-lastname="Doe">Pay 1000 FCFA</a></button> -->
+            <form id="donationForm">
+              <div class="row g-3">
+                <!-- <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0"
+                      id="firstName"
+                      placeholder="Votre Nom"
+                      required
+                    />
+                    <label for="firs">Votre Nom</label>
                   </div>
                 </div>
-                <br /><br /><br />
-                <div class="row g-3">
-                  <!-- <div class="col-12">
-                                <div class="btn-group d-flex justify-content-around">
-                                    <input type="radio" class="btn-check" name="btnradiooption" id="btnradio6" checked>
-                                    <label class="btn btn-light py-3" for="btnradio6">      <img src="./img/paypal-logo.png" alt=""></label>
-
-                         
-                                </div>
-                                <br> -->
-                  <!-- <div class="col-12">
-                                <div class="btn-group d-flex justify-content-around">
-                                    <input type="radio" class="btn-check" name="btnradiooption" id="btnradio7" checked>
-                                    <label class="btn btn-light py-3" for="btnradio7">      <img style="object-fit: contain;" height="60px" width="100%" src="./img/credit-card.png" alt=""></label>
-
-                         
-                                </div>
-                                <br>
-                            <div class="col-12">
-                                <div class="btn-group d-flex justify-content-around">
-                                    <input type="radio" class="btn-check" name="btnradiooption" id="btnradio8" checked>
-                                    <label class="btn btn-light py-3" for="btnradio8">      <img style="object-fit: contain;" height="60px" width="100%"  src="./img/momo.png" alt=""></label>
-
-                         
-                                </div>
-                            </div> -->
-                  <br />
-                  <div class="col-12">
-                    <button class="btn btn-primary px-5" style="height: 60px">
-                      Poursuivre la transaction
-                      <div
-                        class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                      >
-                        <i class="fa fa-arrow-right"></i>
-                      </div>
-                    </button>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0"
+                      id="lastName"
+                      placeholder="Votre Prénom"
+                      required
+                    />
+                    <label for="lastName">Votre Prénom</label>
                   </div>
                 </div>
-              </form>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control bg-light border-0"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div> -->
+                <!-- <div class="col-12">
+                  <div class="btn-group d-flex justify-content-around">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio1"
+                      checked
+                    />
+                    <label
+                      id="pay-btn"
+                      class="btn btn-light py-3"
+                      for="btnradio1"
+                      >$100</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio2"
+                    />
+                    <label class="btn btn-light py-3" for="btnradio2"
+                      >$300</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio3"
+                    />
+                    <label class="btn btn-light py-3" for="btnradio3"
+                      >Montant Libre</label
+                    >
+                  </div>
+                </div> -->
+                <!-- <div class="col-12">
+                  <div class="form-floating">
+                    <select required class="form-control" id="subject" name="subject">
+                      <option value="" disabled selected>Choix</option>
+                      <option value="5000">5000 FCFA</option>
+                      <option value="50000" >50000 FCFA</option>
+                      <option value="100000">100000 FCFA</option>
+                      <option value="500 000 ">500 000 FCFA</option>
+                      <option value="Montant Libre">Montant Libre</option>
+                    
+                    </select>
+                    <label for="subject" name="subject">Autre option</label>
+                  </div>
+                </div> -->
+                <h3>Don En Nature</h3>
+                <div id="footerText" style="text-align: center; margin-top: 20px;">
+                  <p style='text-align:justify'>Pour faire un don en nature au fondation, veuillez suivre ces étapes :</p>
+                  <ol>
+                    <li style='text-align:justify'>Remplissez le formulaire en choisissant l'option "Don et Soutien".</li>
+                    <li style='text-align:justify'>Indiquez dans le message les détails du don en nature que vous souhaitez offrir.</li>
+                   
+                    <li style='text-align:justify'> Nous vous contacterons pour coordonner la collecte du don en nature, en gardant à l'esprit l'amour et le respect qui unissent notre communauté chrétienne.</li>
+                    <li>Consulter le formulaire et suivez les étapes indiquez : <a href='contact.html#subscribeForm'>Remplissez le formulaire</a></li>
+                  </ol>
+                  <p style='text-align:justify'>Que Dieu vous bénisse abondamment pour votre engagement et votre sacrifice. Ensemble, nous faisons la différence dans le monde.</p>
+                </div>
+                <h3>Don En Espèce</h3>
+                <div class="col-12">
+                  <button id="donateButton" class="btn btn-primary px-5" style="height: 60px">
+                   <a style="color: black; " target="_blank" href="https://me.fedapay.com/wP6ip9Oe">Faire un don</a>
+                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                      <i class="fa fa-arrow-right"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              </div>
+            </form>
+           
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -646,6 +649,9 @@
     <script src="lib/parallax/parallax.min.js"></script>
 
     <!-- Template Javascript -->
+    <script type="text/javascript">
+      FedaPay.init('.pay-btn', { public_key: "pk_live_IBOVDokIe2uHDaLJGzOSH-8-"});
+  </script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
   </body>
