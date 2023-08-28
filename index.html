@@ -10,13 +10,11 @@
     <!-- Favicon -->
     <link href="img/logo.jfif" rel="icon" />
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital@1&display=swap" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -39,10 +37,112 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
     <!-- Google tag (gtag.js) -->
+  
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
+ <style>body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .box {
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  .flex-container {
+    display: flex; /* Utilisation de flex pour aligner côte à côte */
+    align-items: center; /* Alignement vertical au centre */
+  }
+  
+  .action-button {
+    margin-left: 10px; /* Espacement entre le span et le button */
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .title {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  font-size: 24px;
+
+}
+
+  
+  .tall-box {
+    height: 400px;
+    width: 40%;
+    background-image: url("./img/carousel-1.jfif");
+    background-size: cover;
+  }
+  .important {
+    height: 300px;
+    width: 40%;
+    background-image: url("./img/about-2.jpg");
+    background-size: cover;
+  }
+  
+  .large-box {
+    height: 400px;
+    width: 60%;
+    background-image: url("./img/courses-1.jpg");
+    background-size: cover;
+  }
+  
+  .small-box {
+    height: 300px;
+    width: 60%;
+    background-image: url("./img/sun.jpg");
+    background-size: cover;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  /* Ajoutez ces styles à la fin de votre feuille de style CSS */
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%; /* Les boîtes occupent toute la largeur */
+  }
+}
+
+  </style>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -335,201 +435,160 @@
       </div>
     </div>
     <!-- Carousel End -->
-
-    <!-- About Start -->
-    <div id="about" class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about-1.jpg"
-                alt=" S'unir pour Changer, Partager et Guider-1"
-                style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about.jpg"
-                alt=" S'unir pour Changer, Partager et Guider-2"
-                style="width: 200px; height: 200px"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100">
-              <div
-                class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-              >
-                Ce que nous croyons
-              </div>
-              <h1 class="display-6 mb-5">
-                Nous aidons les personnes dans le besoin dans le monde entier.
-              </h1>
-              <div
-                class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
-              >
-                <p class="text-dark mb-2">
-                  Animé par la foi, j'ai fondé cette fondation pour semer
-                  l'amour, l'espoir et l'entraide à travers chaque action.
-                </p>
-                <span class="text-primary">Samuel Dalum, Fondateur & Ceo</span>
-              </div>
-              <p class="mb-5" style="text-align: justify">
-                Dans un monde marqué par la diversité et l'interconnexion
-                croissante des cultures, des défis humanitaires et des besoins
-                urgents se profilent à l'horizon. Au cœur de cette réalité
-                complexe, notre engagement envers les personnes dans le besoin
-                brille comme un phare d'espoir et d'action. À travers des
-                efforts à l'échelle mondiale, nous avons pris sur nous la
-                mission vitale de tendre la main à ceux qui luttent contre
-                l'adversité....
-              </p>
-              <a
-                class="btn btn-primary py-2 px-3 me-3"
-                href="humanitaire.html#humanitaire"
-              >
-                Lire plus
-                <div
-                  class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-              <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
-                Contact
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100">
-              <!-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">À propos de nous</div> -->
-              <h1 class="display-6 mb-5">
-                Épanouir les Cœurs : Cultiver l'Amour de Christ pour une Vie
-                Transformée.
-              </h1>
-              <!-- <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
-                            <p class="text-dark mb-2">Nourrissez-vous de l'amour du Christ, une source intarissable d'espoir et de guérison, illuminant chaque aspect de votre existence.</p>
-                            <span class="text-primary">Samuel Dalum, Foundateur & Ceo</span>
-                        </div> -->
-              <p class="mb-5" style="text-align: justify">
-                Cultivons l'amour de Christ, une force bienveillante qui éclaire
-                nos vies, dissipe les ténèbres et inspire des actions empreintes
-                de compassion et de grâce infinie. Comme l'apôtre Paul nous le
-                rappelle dans
-                <strong style="color: #eeba05">
-                  1 Corinthiens 16:14 (LSG) : "Que tout ce que vous faites se
-                  fasse avec amour." </strong
-                >Cette exhortation résonne profondément dans nos cœurs, nous
-                rappelant que chaque acte, chaque parole et chaque pensée
-                doivent être teintés de l'amour du Christ. En suivant cette
-                voie, nous contribuons à illuminer non seulement nos propres
-                vies, mais....
-              </p>
-              <a class="btn btn-primary py-2 px-3 me-3" href="ministere.html">
-                Lire plus
-                <div
-                  class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-              <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
-                Contact
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/about-5.jfif"
-                alt="  Éclairant les âmes perdues, Répandant l'amour de Christ-1"
-                style="object-fit: cover; width: 100%"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about-4.jfif"
-                alt="  Éclairant les âmes perdues, Répandant l'amour de Christ-2"
-                style="width: 200px; height: 200px"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100 pt-5 pe-5"
-                src="img/all7.jfif"
-                alt="  Philharmonie La Grâce Parle-1"
-                style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                src="img/about-6.jfif"
-                alt="  Philharmonie La Grâce Parle-2"
-                style="width: 200px; height: 200px"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100">
-              <!-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">À propos de nous</div> -->
-              <h1 class="display-6 mb-5">
-                Philharmonie La Grâce Parle : Réunir les Cœurs avec Christ à
-                Travers les Mélodies de l'Espérance.
-              </h1>
-
-              <p class="mb-5" style="text-align: justify">
-                Vibrantes mélodies tissent des liens spirituels, transcendant
-                les frontières. La musique devient le langage universel de
-                l'amour christique, invitant chacun à se rassembler dans une
-                harmonie sacrée. Chaque note résonne comme une invitation à
-                connaître Christ, transcendant les différences pour créer
-                une....
-              </p>
-              <a class="btn btn-primary py-2 px-3 me-3" href="fanfare.html">
-                Lire plus
-                <div
-                  class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-              <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
-                Contact
-                <div
-                  class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- <div class="containers">
+      <section class="about">
+        <h2>À Propos de Nous</h2>
+        <p>
+          Le Centre de Fondation XYZ est dédié à...Sed hendrerit. Fusce
+          fermentum odio nec arcu. Proin sapien ipsum, porta a, auctor quis,
+          euismod ut, mi. Nullam dictum felis eu pede mollis pretium. Fusce
+          neque. Vestibulum eu odio. Phasellus ullamcorper ipsum rutrum nunc.
+          Etiam rhoncus. Fusce a quam. Sed aliquam ultrices mauris. Vivamus
+          laoreet. Nunc egestas, augue at pellentesque laoreet, felis eros
+          vehicula leo, at malesuada velit leo quis pede.
+        </p>
+        <img src="img/1177074.png" alt="Image À Propos" />
+      </section>
+      <section class="mission">
+        <h2>Notre Mission</h2>
+        <p>
+          Nous nous efforçons de...Sed hendrerit. Fusce fermentum odio nec arcu.
+          Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nullam
+          dictum felis eu pede mollis pretium. Fusce neque. Vestibulum eu odio.
+          Phasellus ullamcorper ipsum rutrum nunc. Etiam rhoncus. Fusce a quam.
+          Sed aliquam ultrices mauris. Vivamus laoreet. Nunc egestas, augue at
+          pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo
+          quis pede.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="mission">
+        <h2>Notre Mission</h2>
+        <p>
+          Nous nous efforçons de...Sed hendrerit. Fusce fermentum odio nec arcu.
+          Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nullam
+          dictum felis eu pede mollis pretium. Fusce neque. Vestibulum eu odio.
+          Phasellus ullamcorper ipsum rutrum nunc. Etiam rhoncus. Fusce a quam.
+          Sed aliquam ultrices mauris. Vivamus laoreet. Nunc egestas, augue at
+          pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo
+          quis pede.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
     </div>
-    <!-- About End -->
+   -->
 
+   <div class="container">
+    <div class="box tall-box">
+      <div class="flex-container">
+        <span class="icon">&#9654;</span>
+        <a
+        class="btn btn-primary py-2 px-3 animated slideInDown"
+        href=""
+      >
+VIDEO
+        <div
+          class="d-inline-flex  bg-white text-primary ms-2"
+        >
+      
+        </div>
+      </a>
+      </div>
+      <h1 class="title">  La grâce ne condamne pas !  <br>   <a class="btn btn-secondary" href="#">VOIR LA VIDEO</a> <!-- Nouveau bouton --></h1>
+    
+
+    </div>
+    <div class="box large-box">
+      <div class="flex-container">
+        <span class="icon">&#9995;</span>
+        <a
+        class="btn btn-primary py-2 px-3 animated slideInDown"
+        href=""
+      >
+HAND OF HOPE
+        <div
+          class="d-inline-flex  bg-white text-primary ms-2"
+        >
+      
+        </div>
+      </a>
+      
+      </div>
+      <h1 class="title">Joignez-vous à nous pour façonner un monde meilleur.    <br>   <a class="btn btn-secondary" href="#">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
+
+
+    </div>
+    <!-- <div class="box tall-box important">
+      <div class="flex-container">
+        <span class="icon">&#128722;</span>
+        <a
+        class="btn btn-primary py-2 px-3 animated slideInDown"
+        href=""
+      >
+BOUTIQUE
+        <div
+          class="d-inline-flex  bg-white text-primary ms-2"
+        >
+      
+        </div>
+      </a>
+  
+      </div>
+
+    </div> -->
+    <div class="box small-box">
+      <div class="flex-container">
+        <span class="icon">&#128161;</span>
+   
+        <a
+        class="btn btn-primary py-2 px-3 animated slideInDown"
+        href=""
+      >
+  LA MEDITATION QUOTIDIENNE
+        <div
+          class="d-inline-flex  bg-white text-primary ms-2"
+        >
+      
+        </div>
+      </a>
+      
+      </div>
+      <h1 class="title">Arrêtez de « tenir vos comptes »  <br>   <a class="btn btn-secondary" href="#">LIRE LA PENSEE</a> <!-- Nouveau bouton --></h1>
+
+    </div>
+    <div class="box tall-box important">
+      <div class="flex-container">
+        <span class="icon">&#128722;</span>
+   
+        <a
+        class="btn btn-primary py-2 px-3 animated slideInDown"
+        href=""
+      >
+BOUTIQUE
+        <div
+          class="d-inline-flex  bg-white text-primary ms-2"
+        >
+      
+        </div>
+      </a>
+      
+      </div>
+      <h1 class="title">  <a class="btn btn-secondary" href="#">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
+
+    </div>
+    </div>
     <!-- Service Start -->
     <div class="container-xxl py-5">
       <div class="container">
