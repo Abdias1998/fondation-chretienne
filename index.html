@@ -42,14 +42,49 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
- <style>body,
+ <style>
+ /* Reset some default button styles */
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Primary button */
+.primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Secondary button */
+.secondary {
+  background-color: #f50057;
+  color: white;
+}
+
+/* Success button */
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Danger button */
+.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+ 
+ body,
   html {
     margin: 0;
     padding: 0;
   }
   
   .container {
-    width: 80%;
+    width: 95%;
     max-height: auto;
     margin: 0 auto;
     display: flex;
@@ -62,7 +97,7 @@
     width: 23%;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 10px solid white;
     box-sizing: border-box;
     position: relative;
   }
@@ -101,25 +136,27 @@
   .tall-box {
     height: 400px;
     width: 40%;
-    background-image: url("./img/carousel-1.jfif");
+    background-image: url("./img/trimphe.jpg");
     background-size: cover;
   }
   .important {
-    height: 300px;
+    height: 400px;
     width: 40%;
-    background-image: url("./img/about-2.jpg");
+    background-image: url("./img/book.avif");
     background-size: cover;
+    background-position: center;
+    object-fit: cover;
   }
   
   .large-box {
     height: 400px;
     width: 60%;
-    background-image: url("./img/courses-1.jpg");
+    background-image: url("./img/carousel-1.jpg");
     background-size: cover;
   }
   
   .small-box {
-    height: 300px;
+    height: 400px;
     width: 60%;
     background-image: url("./img/sun.jpg");
     background-size: cover;
@@ -128,6 +165,9 @@
   h1 {
     margin: 0;
   }
+  a{color: white;
+  }
+  a:hover{color:white;}
   /* Ajoutez ces styles à la fin de votre feuille de style CSS */
 
 @media (max-width: 767px) {
@@ -139,6 +179,7 @@
 
   .box {
     width: 100%; /* Les boîtes occupent toute la largeur */
+    border: none;
   }
 }
 
@@ -380,7 +421,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img
               class="w-100"
               src="img/about-2.jpg"
@@ -412,7 +453,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <button
           class="carousel-control-prev"
@@ -494,36 +535,16 @@
     <div class="box tall-box">
       <div class="flex-container">
         <span class="icon">&#9654;</span>
-        <a
-        class="btn btn-primary py-2 px-3 animated slideInDown"
-        href=""
-      >
-VIDEO
-        <div
-          class="d-inline-flex  bg-white text-primary ms-2"
-        >
-      
-        </div>
-      </a>
+        <button class="mui-button primary"><a href="">VIDÉO</a></button>
       </div>
-      <h1 class="title">  La grâce ne condamne pas !  <br>   <a class="btn btn-secondary" href="#">VOIR LA VIDEO</a> <!-- Nouveau bouton --></h1>
+      <h1 class="title">  La grâce ne condamne pas !  <br>   <a class="btn btn-secondary" href="#">VOIR LA VIDÉO</a> <!-- Nouveau bouton --></h1>
     
 
     </div>
     <div class="box large-box">
       <div class="flex-container">
         <span class="icon">&#9995;</span>
-        <a
-        class="btn btn-primary py-2 px-3 animated slideInDown"
-        href=""
-      >
-HAND OF HOPE
-        <div
-          class="d-inline-flex  bg-white text-primary ms-2"
-        >
-      
-        </div>
-      </a>
+        <button class="mui-button secondary"><a href="">HAND OF HOPE</a></button>
       
       </div>
       <h1 class="title">Joignez-vous à nous pour façonner un monde meilleur.    <br>   <a class="btn btn-secondary" href="#">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
@@ -552,38 +573,18 @@ BOUTIQUE
       <div class="flex-container">
         <span class="icon">&#128161;</span>
    
-        <a
-        class="btn btn-primary py-2 px-3 animated slideInDown"
-        href=""
-      >
-  LA MEDITATION QUOTIDIENNE
-        <div
-          class="d-inline-flex  bg-white text-primary ms-2"
-        >
-      
-        </div>
-      </a>
+        <button class="mui-button success"><a href="">LA MÉDITATION QUOTIDIENNE</a></button>
       
       </div>
-      <h1 class="title">Arrêtez de « tenir vos comptes »  <br>   <a class="btn btn-secondary" href="#">LIRE LA PENSEE</a> <!-- Nouveau bouton --></h1>
+      <span>29 Aoûts 2023</span>
+      <h1 class="title">Arrêtez de « tenir vos comptes »  <br>   <a class="btn btn-secondary" href="#">LIRE LA PENSÉE</a> <!-- Nouveau bouton --></h1>
 
     </div>
     <div class="box tall-box important">
       <div class="flex-container">
         <span class="icon">&#128722;</span>
    
-        <a
-        class="btn btn-primary py-2 px-3 animated slideInDown"
-        href=""
-      >
-BOUTIQUE
-        <div
-          class="d-inline-flex  bg-white text-primary ms-2"
-        >
-      
-        </div>
-      </a>
-      
+        <button class="mui-button danger"><a href="">BOUTIQUE</a></button>
       </div>
       <h1 class="title">  <a class="btn btn-secondary" href="#">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
 
@@ -733,11 +734,7 @@ BOUTIQUE
       </div>
     </div>
     <!-- Service End -->
-    <div
-    class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-  >
-    À propos de nous
-  </div>
+
   <!-- About Start -->
   <div id="about" class="container-xxl py-5">
     <div class="container">
