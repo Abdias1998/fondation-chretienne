@@ -41,7 +41,37 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
+
+      .message-box {
+        border: 2px solid #333;
+        padding: 20px;
+        background-color: #ffc400; /* Nouvelle couleur de fond */
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      }
+
+      .message-title {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .message-author {
+        margin-top: 5px;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .message-content {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #444;
+      }
+
       form {
         max-width: 600px;
         margin: 0 auto;
@@ -170,7 +200,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Accueil</a>
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
             <a href="about.html" class="nav-item nav-link">À propos</a>
             <!-- <a href="causes.html" class="nav-item nav-link">Causes</a> -->
             <div class="nav-item dropdown">
@@ -290,6 +320,25 @@
       </p>
       <p>Veuillez remplir tous les champs suivants :</p>
     </div>
+    <div class="message-box">
+      <h2 class="message-title">Quisque ut nisi</h2>
+      <p class="message-author">Auteur</p>
+      <p class="message-content">
+        Phasellus dolor. Vivamus elementum semper nisi. Nulla facilisi. Mauris
+        sollicitudin fermentum libero. Maecenas tempus, tellus eget condimentum
+        rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
+        ipsum. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi
+        congue nunc, vitae euismod ligula urna in dolor. Praesent vestibulum
+        dapibus nibh. In hac habitasse platea dictumst. Vivamus elementum semper
+        nisi. Fusce ac felis sit amet ligula pharetra condimentum. Donec mi
+        odio, faucibus at, scelerisque quis, convallis in, nisi. Nunc nec neque.
+        Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Praesent
+        adipiscing. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum
+        laoreet sapien, quis venenatis ante odio sit amet eros. Pellentesque
+        libero tortor, tincidunt et, tincidunt eget, semper nec, quam.
+      </p>
+    </div>
+
     <form id="subscribeForm">
       <p id="messageParagraph"></p>
       <label for="names">Nom* :</label>
