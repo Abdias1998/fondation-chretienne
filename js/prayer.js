@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://backend-lagraceparle.onrender.com/api/v2/prayer",
+        "https://backend-lagraceparle.onrender.com/api/v3/prayer",
         {
           method: "POST",
           headers: {
