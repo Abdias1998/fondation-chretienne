@@ -42,7 +42,65 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
- <style>
+    <style>
+      .containers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #f90; Fond orange */
+        margin: 100px;
+        color: white;
+        position: relative;
+      }
+.icons{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
+      .boxs {
+        flex: 1;
+        text-align: center;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+      }
+
+      .box1s {
+        background-image: url("./img/bible.avif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+     
+      }
+
+      .box2s {
+        background-image: url('./img/prayer.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .containers {
+          flex-direction: column;
+          margin: 20px;
+          height: 700px;
+        } 
+      .box1s{
+        height: 200px;
+      }
+      .box2s{
+        height: 200px;
+      }
+      }
+  
+
  /* Reset some default button styles */
 button {
   border: none;
@@ -77,11 +135,7 @@ button {
 }
 
  
- body,
-  html {
-    margin: 0;
-    padding: 0;
-  }
+
   
   .container {
     width: 95%;
@@ -391,6 +445,40 @@ button {
           </div>
           <div class="carousel-item">
             <img
+            class="w-100"
+            src="img/all7.jfif"
+            alt=" Philharmonie La Grâce Parle"
+         
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h1 class="display-4 text-white mb-3 animated slideInDown">
+                      Éclairant les âmes perdues, Répandant l'amour de Christ.
+                    </h1>
+                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                      Philharmonie La Grâce Parle : La Parole en Mélodie. Notre
+                      groupe chrétien de musique résonne avec l'amour divin.
+                    </p>
+                    <a
+                      class="btn btn-primary py-2 px-3 animated slideInDown"
+                      href=""
+                    >
+                 DECOUVRIR
+                      <div
+                        class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+                      >
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img
               class="w-100"
               src="img/all7.jfif"
               alt=" Philharmonie La Grâce Parle"
@@ -422,7 +510,7 @@ button {
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="carousel-item">
             <img
               class="w-100"
@@ -478,68 +566,14 @@ button {
       </div>
     </div>
     <!-- Carousel End -->
-    <!-- <div class="containers">
-      <section class="about">
-        <h2>À Propos de Nous</h2>
-        <p>
-          Le Centre de Fondation XYZ est dédié à...Sed hendrerit. Fusce
-          fermentum odio nec arcu. Proin sapien ipsum, porta a, auctor quis,
-          euismod ut, mi. Nullam dictum felis eu pede mollis pretium. Fusce
-          neque. Vestibulum eu odio. Phasellus ullamcorper ipsum rutrum nunc.
-          Etiam rhoncus. Fusce a quam. Sed aliquam ultrices mauris. Vivamus
-          laoreet. Nunc egestas, augue at pellentesque laoreet, felis eros
-          vehicula leo, at malesuada velit leo quis pede.
-        </p>
-        <img src="img/1177074.png" alt="Image À Propos" />
-      </section>
-      <section class="mission">
-        <h2>Notre Mission</h2>
-        <p>
-          Nous nous efforçons de...Sed hendrerit. Fusce fermentum odio nec arcu.
-          Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nullam
-          dictum felis eu pede mollis pretium. Fusce neque. Vestibulum eu odio.
-          Phasellus ullamcorper ipsum rutrum nunc. Etiam rhoncus. Fusce a quam.
-          Sed aliquam ultrices mauris. Vivamus laoreet. Nunc egestas, augue at
-          pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo
-          quis pede.
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section class="mission">
-        <h2>Notre Mission</h2>
-        <p>
-          Nous nous efforçons de...Sed hendrerit. Fusce fermentum odio nec arcu.
-          Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nullam
-          dictum felis eu pede mollis pretium. Fusce neque. Vestibulum eu odio.
-          Phasellus ullamcorper ipsum rutrum nunc. Etiam rhoncus. Fusce a quam.
-          Sed aliquam ultrices mauris. Vivamus laoreet. Nunc egestas, augue at
-          pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo
-          quis pede.
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </div>
-   -->
-
+   
    <div class="container">
     <div class="box tall-box">
       <div class="flex-container">
         <span class="icon">&#9654;</span>
-        <button class="mui-button primary"><a href="">VIDÉO</a></button>
+        <button class="mui-button primary"><a target="_blank" href="https://www.youtube.com/watch?v=bz1RYsXxHmk">VIDÉO</a></button>
       </div>
-      <h1 class="title">  Le triomphe de la foi !  <br>   <a class="btn btn-secondary" href="#">VOIR LA VIDÉO</a> <!-- Nouveau bouton --></h1>
+      <h1 class="title">  Le triomphe de la foi !  <br>   <a target="_blank" class="btn btn-secondary" href="https://www.youtube.com/watch?v=bz1RYsXxHmk">VOIR LA VIDÉO</a> <!-- Nouveau bouton --></h1>
     
 
     </div>
@@ -549,7 +583,7 @@ button {
         <button class="mui-button secondary"><a href="humanitaire.html">HAND OF HOPE</a></button>
       
       </div>
-      <h1 class="title">Joignez-vous à nous pour façonner un monde meilleur.    <br>   <a class="btn btn-secondary" href="#">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
+      <h1 class="title">Joignez-vous à nous pour façonner un monde meilleur.    <br>   <a class="btn btn-secondary" href="humanitaire.html">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
 
 
     </div>
@@ -592,151 +626,7 @@ BOUTIQUE
 
     </div>
     </div>
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <div
-            class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-          >
-            Ce que nous faisons
-          </div>
-          <h1 class="display-6 mb-5">
-            Apprenez-en plus sur ce que nous faisons et impliquez-vous.
-          </h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/church.png"
-                alt="   Transformation des Vies par l'évangile de Christ"
-              />
-              <h4 class="mb-3">
-                Transformation des Vies par l'évangile de Christ.
-              </h4>
-              <p class="mb-4">
-                Nous changeons les Vies grâce à l'évangile transformateur de
-                Jésus-Christ.
-              </p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/medical.png"
-                alt="Traitement médical"
-              />
-              <h4 class="mb-3">Traitement médical</h4>
-              <p class="mb-4">
-                Nous offrons des soins essentiels pour préserver votre santé.
-              </p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/community.png"
-                alt="Développement communautaire"
-              />
-              <h4 class="mb-3">Développement communautaire</h4>
-              <p class="mb-4">Progression et lien au sein de la communauté.</p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/icon-3.png"
-                alt="Eau potable pure"
-              />
-              <h4 class="mb-3">Eau potable pure</h4>
-              <p class="mb-4">
-                L'accès à l'eau potable pure est fondamental pour la santé
-                globale.
-              </p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/icon-1.png"
-                alt="Éducation"
-              />
-              <h4 class="mb-3">Éducation</h4>
-              <p class="mb-4">
-                Acquisition de connaissances et compétences pour le
-                développement personnel.
-              </p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-              <img
-                class="img-fluid mb-4"
-                src="img/programm.png"
-                alt="Programmes d'autonomisation économique"
-              />
-              <h4 class="mb-3">Programmes d'autonomisation économique</h4>
-              <p class="mb-4">
-                Initiatives pour renforcer l'indépendance financière et le
-                développement personnel.
-              </p>
-              <!-- <a class="btn btn-outline-primary px-3" href="">
-                           Lire la suite
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
+ 
   <!-- About Start -->
   <div id="about" class="container-xxl py-5">
     <div class="container">
@@ -748,7 +638,7 @@ BOUTIQUE
           >
             <img
               class="position-absolute w-100 h-100"
-              src="img/about-1.jpg"
+              src="img/help.jpg"
               alt=" S'unir pour Changer, Partager et Guider-1"
               style="object-fit: cover"
             />
@@ -1084,7 +974,40 @@ BOUTIQUE
      </div>
    </div>
    <!-- Donate End -->
+   <div class="containers">
+    <div class="boxs box1s">
+      <div class="icons">
 
+        <span class="icon">&#128161;</span>
+        <button class="mui-button success"><a href="newsletter.html">LA MÉDITATION QUOTIDIENNE</a></button>
+      </div>
+      <h2>Recevoir une méditation tous les jours</h2>
+    <button style="   padding: 10px 20px;
+    background-color: rgb(202,188,193); 
+    color: #fff;
+    border: none;
+    cursor: pointer;"><a href="newsletter.html#subscribe">JE M'ABONNE</a></button>
+    </div>
+    <div class="boxs box2s">
+
+    
+      
+      <button style="   padding: 10px 20px;margin: 5px;
+      background-color: transparent; 
+     
+      border: 1px solid white;
+      cursor: pointer;"><a href="contact.html">NOUS ÉCRIRE UN EMAIL</a></button>    <button style=" margin: 5px;  padding: 10px 20px;
+    background-color: transparent; 
+
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;"><a href="prayer.html">DEMANDER LA PRIÈRE</a></button>    <button style=" margin: 5px;  padding: 10px 20px;
+    background-color: transparent; 
+    color: #fff;
+    border: 1px solid white;;
+    cursor: pointer;"><a href="newsletter.html#subscribe">M’ABONNER À LA NEWSLETTER</a></button>
+    </div>
+  </div>
     <!-- Footer Start -->
     <div
       class="container-fluid bg-dark text-white-50 footer mt-5 fadeIn"
