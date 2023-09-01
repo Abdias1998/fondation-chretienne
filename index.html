@@ -43,6 +43,43 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
     <style>
+        .list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .list-item {
+        flex: 1;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        min-width: 300px; /* Largeur minimale pour éviter une largeur trop étroite sur les petits écrans */
+      }
+
+      .list-header {
+        /* background-image: url("./img/logo.jfif"); */
+        background-position: center;
+        min-height: 100px;
+        color: #fff;
+        padding: 5px;
+      }
+
+      .list-body {
+        padding: 10px;
+        height: 200px;
+      }
+
+      .list-footer {
+        text-align: center;
+        padding: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .list {
+          flex-direction: column;
+        }
+      }
       .containers {
         display: flex;
         justify-content: space-between;
@@ -1007,6 +1044,45 @@ BOUTIQUE
     border: 1px solid white;;
     cursor: pointer;"><a href="newsletter.html#subscribe">M’ABONNER À LA NEWSLETTER</a></button>
     </div>
+  </div>
+  <div class="list">
+    <div class="list-item">
+      <div class="list-header">Header</div>
+      <div class="list-body">Contenu du corps de l'élément de liste.</div>
+      <div class="list-footer">
+        <button>En Savoir Plus</button>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-header">Header 2</div>
+      <div class="list-body">
+        Nam eget dui. Praesent ut ligula non mi varius sagittis. Praesent
+        turpis. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.
+        Nulla sit amet est. Vivamus laoreet.
+      </div>
+      <div class="list-footer">
+        <button>En Savoir Plus</button>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-header">Header 2</div>
+      <div class="list-body">
+        Un autre contenu dans le corps de l'élément de liste.
+      </div>
+      <div class="list-footer">
+        <button>En Savoir Plus</button>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-header">Header 2</div>
+      <div class="list-body">
+        Un autre contenu dans le corps de l'élément de liste.
+      </div>
+      <div class="list-footer">
+        <button>En Savoir Plus</button>
+      </div>
+    </div>
+    <!-- Vous pouvez ajouter plus d'éléments de liste ici -->
   </div>
     <!-- Footer Start -->
     <div
