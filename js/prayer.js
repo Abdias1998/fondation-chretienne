@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Réactiver le bouton et rétablir le texte original
       submit.disabled = false;
       submit.textContent = ancienTexteBouton;
+      subscribeForm.style.display = "none";
     }
   });
 });
