@@ -155,6 +155,7 @@ body {
   text-align: center;
   background: rgba(0, 29, 35, 0.8);
   z-index: 1;
+  height: auto;
 }
 
 .carousel-control-prev,
