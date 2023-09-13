@@ -33,7 +33,7 @@
   /* Autres styles pour le premier enfant */
 }
 .child5 {
-  background-image: url("../img/marché.png");
+  background-image: url("../img/marche.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,6 +42,22 @@
 }
 .child6 {
   background-image: url("../img/formation.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child7 {
+  background-image: url("../img/brigade.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child8 {
+  background-image: url("../img/chambre-haute.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +81,9 @@
   .child3,
   .child4,
   .child5,
-  .child6 {
+  .child6,
+  .child7,
+  .child8 {
     width: 100vw;
     height: 300px;
   }
