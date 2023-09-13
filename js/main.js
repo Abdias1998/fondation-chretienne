@@ -82,12 +82,7 @@ function checkAndHandleIcon() {
   const now = new Date();
   const liveIcon = document.getElementById("live-icon");
 
-  if (
-    now.getDay() === 3 &&
-    now.getHours() === 19 &&
-    now.getMinutes() >= 30 &&
-    now.getHours() < 24
-  ) {
+  if (now.getDay() === 1 && now.getHours() >= 23 && now.getHours() < 24) {
     // C'est un lundi entre 22h30 et minuit, afficher l'icône
     liveIcon.style.display = "block";
     document.getElementById("live-icon").classList.add("blinking");
