@@ -1,0 +1,76 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  /* Autres styles pour le parent */
+}
+
+.child1 {
+  background-image: url("../img/4.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child3 {
+  background-image: url("../img/prison.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child4 {
+  background-image: url("../img/fourniture.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child5 {
+  background-image: url("../img/marché.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child6 {
+  background-image: url("../img/formation.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+
+.child2 {
+  padding: 20px;
+  width: 50%;
+  /* Autres styles pour le deuxième enfant */
+}
+
+/* Utilisation des médias pour changer la direction en colonne sur les petits écrans */
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column;
+    height: auto;
+  }
+  .child1,
+  .child3,
+  .child4,
+  .child5,
+  .child6 {
+    width: 100vw;
+    height: 300px;
+  }
+  .child2 {
+    width: 100vw;
+    height: auto;
+  }
+}
