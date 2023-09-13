@@ -16,6 +16,9 @@
   width: 50%;
   /* Autres styles pour le premier enfant */
 }
+p {
+  text-align: justify;
+}
 .child3 {
   background-image: url("../img/prison.png");
   background-size: contain;
@@ -64,6 +67,14 @@
   width: 50%;
   /* Autres styles pour le premier enfant */
 }
+.child9 {
+  background-image: url("../img/philharmonie.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
 
 .child2 {
   padding: 20px;
@@ -83,7 +94,8 @@
   .child5,
   .child6,
   .child7,
-  .child8 {
+  .child8,
+  .child9 {
     width: 100vw;
     height: 300px;
   }
