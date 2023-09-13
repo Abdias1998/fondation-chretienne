@@ -45,10 +45,29 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
     <style>
-      
+ iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        overflow: hidden;
+      }
 
-
-   
+      /* Animation de clignotement */
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+ .blinking {
+        animation: blink 1s infinite;
+      }
+   /* end */
       .containers {
         display: flex;
         justify-content: space-between;
@@ -625,21 +644,22 @@ BOUTIQUE
   </div>
   <div class="parent">
     <div class="child2">
-      <h2>'Brigade de Prière' : Un Chemin Spirituel Vers la Sérénité</h2>
+      <h2>'Brigade de Prières' : Un Chemin Spirituel Vers la Sérénité</h2>
       <p>
         Le programme de prière "Brigade de la Rédemption" est une initiative chrétienne ouverte à tous ceux qui cherchent la guérison, le travail, la santé et d'autres bénédictions divines. Fondé sur la foi chrétienne, ce programme offre un espace de prière et d'intercession pour les besoins spirituels et matériels de chacun. Les participants peuvent se joindre à des séances de prière collectives visant à solliciter les bénédictions de Dieu dans divers aspects de leur vie. Que ce soit pour trouver la guérison, la prospérité ou la paix intérieure, la "Brigade de la Rédemption" offre un lieu de recueillement et d'espérance pour ceux qui cherchent la grâce divine.
       </p>
       <a
         class="btn btn-outline-primary py-2 px-3"
-        href="https://www.facebook.com/Samuel.DALUM" target="_blank"
+        href="ministere.html" target="_blank"
       >
-       Suivre Brigade de prière sur facebook
+  En savoir plus 
         <div
           class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
         >
           <i class="fa fa-arrow-right"></i>
         </div>
       </a>
+    
     </div>
     <div class="child7"></div>
     
@@ -765,6 +785,7 @@ BOUTIQUE
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
+
       <p>  <a  href="index.html" class="navbar-brand ms-4 ms-lg-0">
         <h6 style="font-size: 20px;" class="fw-bold text-primary m-0">
           <img src="./img/logo.jfif" width="35" style="border-radius: 100%" />
@@ -863,6 +884,14 @@ BOUTIQUE
           </div>
         </div>
       </div>
+      <div id="live-icon" style="display: none;">      <a href="https://radioenlignefrance.com/maranatha" target="_blank">  <img src="./img/live.jpg" style="z-index: 10000;  position: fixed;bottom: 60px;left: 0;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
+      </div>
+
+      <!-- Collez le code d'intégration de Facebook ci-dessous -->
+    
+  
+  
+      
       <a href="https://api.whatsapp.com/send?phone=+22953037832" target="_blank">
         <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 0;left: 0;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
     </a>
@@ -875,7 +904,7 @@ BOUTIQUE
     ></a>
 
     <!-- JavaScript Libraries -->
-
+   
     <script type="text/javascript">
       FedaPay.init("#pay-btn", { public_key: "YOUR_API_PUBLIC_KEY" });
     </script>

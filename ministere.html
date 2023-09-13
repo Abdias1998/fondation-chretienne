@@ -52,6 +52,47 @@
       gtag("config", "G-FSM4EQJ2E1");
     </script>
     <style>
+      /* Votre CSS existant */
+      iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+        overflow: hidden;
+      }
+      .prayer-info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .prayer-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .prayer-info h2 {
+        color: #333;
+      }
+
+      .prayer-info i {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      /* CSS pour les petits écrans */
+      @media (max-width: 767px) {
+        .prayer-info-container {
+          grid-template-columns: 1fr; /* Afficher en colonne */
+          text-align: center;
+        }
+      }
+
+      /* end */
       .container_car {
         width: 100vw; /* Largeur de votre carrousel */
         overflow: hidden;
@@ -347,41 +388,60 @@
     >
       À propos de nous
     </div>
+
     <div class="parent">
       <div class="child7"></div>
       <div class="child2">
-        <h2>Notre Mission : Changer des Vies, un Acte de Bonté à la Fois</h2>
+        <h2>'Brigade de Prière' : Un Chemin Spirituel Vers la Sérénité</h2>
         <p>
-          Nous sommes guidés par la conviction profonde que chaque individu
-          mérite une chance de rédemption et de réintégration réussie dans la
-          société. Notre mission est simple : apporter de l'espoir, du réconfort
-          et du soutien aux personnes incarcérées. Nous réalisons cette mission
-          grâce à la visite régulière de nos bénévoles dévoués, qui offrent un
-          soutien moral, écoutent les préoccupations et renforcent les liens
-          humains. Nous croyons en la réhabilitation plutôt qu'en la punition,
-          et travaillons en étroite collaboration avec les autorités
-          pénitentiaires et d'autres organisations pour faciliter la réinsertion
-          des détenus dans la société. Nous organisons également des programmes
-          d'information et des campagnes pour sensibiliser le public aux enjeux
-          liés à la réhabilitation.
+          Le programme de prière "Brigade de la Rédemption" est une initiative
+          chrétienne ouverte à tous ceux qui cherchent la guérison, le travail,
+          la santé et d'autres bénédictions divines. Fondé sur la foi
+          chrétienne, ce programme offre un espace de prière et d'intercession
+          pour les besoins spirituels et matériels de chacun. Les participants
+          peuvent se joindre à des séances de prière collectives visant à
+          solliciter les bénédictions de Dieu dans divers aspects de leur vie.
+          Que ce soit pour trouver la guérison, la prospérité ou la paix
+          intérieure, la "Brigade de la Rédemption" offre un lieu de
+          recueillement et d'espérance pour ceux qui cherchent la grâce divine.
         </p>
         <a
           class="btn btn-outline-primary py-2 px-3"
           href="https://www.facebook.com/Samuel.DALUM"
         >
-          Brigade de prière sur facebook
+          Suivez-nous sur Facebook
           <div
             class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
           >
             <i class="fa fa-arrow-right"></i>
           </div>
         </a>
+
+        <br />
+
+        <div class="prayer-info-container">
+          <div class="prayer-info">
+            <i class=""><img src="./img/prayer-icon3.png" alt="" /></i>
+            <h2>Mardi</h2>
+            <p><strong>Heure :</strong> 12h30 - 15h00</p>
+          </div>
+          <div class="prayer-info">
+            <i class=""><img src="./img/prayer-icon2.png" alt="" /></i>
+            <h2>Vendredi</h2>
+            <p><strong>Heure :</strong> 19h00 - 22h30</p>
+          </div>
+          <div class="prayer-info">
+            <i class=""><img src="./img/prayer-icon3.png" alt="" /></i>
+            <h2>Dimanche</h2>
+            <p><strong>Heure :</strong> 16h30 - 20h30</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="parent">
+    <!-- <div class="parent">
       <div class="child8"></div>
       <div class="child2">
-        <h2>Notre Mission : Changer des Vies, un Acte de Bonté à la Fois</h2>
+        <h2>La chambre haute</h2>
         <p>
           Nous sommes guidés par la conviction profonde que chaque individu
           mérite une chance de rédemption et de réintégration réussie dans la
@@ -409,7 +469,7 @@
           </div>
         </a>
       </div>
-    </div>
+    </div> -->
 
     <div class="containers">
       <div class="boxs box1s">
@@ -586,6 +646,7 @@
         </div>
       </div>
     </div>
+
     <!-- Footer End -->
 
     <!-- Back to Top -->
