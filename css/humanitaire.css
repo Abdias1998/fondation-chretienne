@@ -75,6 +75,30 @@ p {
   width: 50%;
   /* Autres styles pour le premier enfant */
 }
+.child10 {
+  background-image: url("../img/femme-de-grace.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child11 {
+  background-image: url("../img/jeune-jeune.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
+.child12 {
+  background-image: url("../img/worship.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* Autres styles pour le premier enfant */
+}
 
 .child2 {
   padding: 20px;
@@ -95,7 +119,10 @@ p {
   .child6,
   .child7,
   .child8,
-  .child9 {
+  .child9,
+  .child10,
+  .child11,
+  .child12 {
     width: 100vw;
     height: 300px;
   }
