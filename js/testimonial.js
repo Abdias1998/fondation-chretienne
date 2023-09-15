@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.classList.add("success");
 
         nameInput.value = "";
-        phoneNumberInput.value = "";
+
         messageSelect.value = "";
         sexeInput.value = "";
         paysInput.value = "";
