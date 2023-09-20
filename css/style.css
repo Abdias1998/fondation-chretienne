@@ -1,7 +1,8 @@
 /********** Template CSS **********/
 p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
+  font-weight: 700;
 }
 /* Styles pour la fenêtre modale */
 .modal {
