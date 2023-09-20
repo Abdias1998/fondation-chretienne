@@ -17,8 +17,8 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
+  background-color: #f1e3c7;
+  padding: 10px;
   width: 100%;
 }
 
@@ -29,7 +29,18 @@
   padding: 10px;
   cursor: pointer;
 }
+/* Styles pour le bouton */
+#openModalBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
 
+#openModalBtn:hover {
+  background-color: #0056b3;
+}
 /* end */
 .prayer-info-container {
   display: grid;
