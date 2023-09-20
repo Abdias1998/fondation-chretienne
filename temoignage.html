@@ -51,6 +51,19 @@
       gtag("config", "G-FSM4EQJ2E1");
     </script>
     <style>
+      @media (max-width: 767px) {
+        .world {
+          background-image: url(./img/world.png);
+          width: 100%;
+          margin: auto;
+          height: 300px;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          clip-path: ellipse(50% 60% at 50% 40%);
+        }
+      }
+      /* end */
       .prayer-info-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -372,7 +385,7 @@
     >
       <div class="container text-center">
         <h3 class="display-4 text-white animated slideInDown mb-4">
-          Les Témoignages de Foi
+          Les Témoignages de La Grâce
         </h3>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center mb-0">
@@ -381,27 +394,29 @@
             </li>
             <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Les Témoignages de Foi
+              Les Témoignages de La Grâce
             </li>
           </ol>
         </nav>
       </div>
     </div>
     <!-- Page Header End -->
-    <header>
-      <h1>
-        Bienvenue dans la page “Les Témoignages de Foi” de La Grâce Parle !
-      </h1>
-    </header>
-    <p>
-      Dans cette section, nous vous proposons d’explorer la Francophonie, et à
-      faire escale dans différents pays, pour découvrir comment Dieu agit et
-      transforme la vie d’hommes et de femmes qui se confient en lui.
+
+    <div class="world"></div>
+    <!-- <header>
+      <h1>Bienvenue dans la page “Les Témoignages de La Grâce”</h1>
+    </header> -->
+    <!-- <img src="./img/temoignage.jpeg" alt="" /> -->
+    <p style="padding: 15px">
+      Bienvenue dans la page “Les Témoignages de La Grâce”. Dans cette section,
+      nous vous invitons à explorer les récits inspirants de femmes et d'hommes
+      qui ont placé leur confiance en Dieu, découvrant ainsi comment Sa
+      puissance et Son amour transforment leurs vies.
     </p>
     <div class="prayer-info-container">
       <div class="prayer-info">
         <i class=""
-          ><img src="./img/testimonial-2.jpg" width="100" height="100" alt=""
+          ><img src="./img/user.webp" width="100" height="100" alt=""
         /></i>
         <h6>Test 3</h6>
         <p>
@@ -412,7 +427,7 @@
       </div>
       <div class="prayer-info">
         <i class=""
-          ><img src="./img/testimonial-3.jpg" width="100" height="100" alt=""
+          ><img src="./img/user-wife.webp" width="100" height="100" alt=""
         /></i>
         <h6>Test 1</h6>
         <p>
@@ -423,7 +438,7 @@
       </div>
       <div class="prayer-info">
         <i class=""
-          ><img src="./img/testimonial-1.jpg" width="100" height="100" alt=""
+          ><img src="./img/user.webp" width="100" height="100" alt=""
         /></i>
         <h6>Test 2</h6>
         <p>
@@ -435,13 +450,13 @@
     </div>
     <p style="padding: 15px">
       Si vous avez vécu une expérience inspirante ou une bénédiction que vous
-      aimeriez partager avec nous, nous vous encourageons à cliquer sur le lien
-      ci-dessous. Votre témoignage peut apporter de l'espoir et de la foi à
-      d'autres. Merci de partager ce que Dieu a fait pour vous.
+      aimeriez partager avec nous, nous vous encourageons à cliquer sur le
+      lien<a style="padding: 15px" href="form_temoignage.html"
+        >partager votre témoignage</a
+      >Votre témoignage peut apporter de l'espoir à d'autres. Merci de partager
+      ce que Dieu a fait pour vous.
     </p>
-    <a style="padding: 15px" href="form_temoignage.html"
-      >Cliquer ici pour partager votre témoignage</a
-    >
+
     <!-- Footer Start -->
     <div
       class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn"

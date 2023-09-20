@@ -38,12 +38,12 @@ h3 {
   transform: scale(3);
 }
 .president {
-  color: #00390a;
+  color: white;
   position: absolute;
   bottom: 100px;
   right: 180px;
   text-transform: uppercase;
-
+  background-color: #1c3821;
   font-size: 35px;
 
   letter-spacing: 5px;
@@ -87,8 +87,8 @@ h3 {
     left: 15px;
   }
   .president {
-    color: #00390a;
-
+    color: white;
+    background-color: #1c3821;
     bottom: 100px;
     right: 90px;
     text-transform: uppercase;
@@ -118,7 +118,7 @@ main {
 }
 .mainOne {
   background-color: #faf2e1;
-  color: white;
+  color: gray;
   text-align: center;
   padding: 20px;
 }
@@ -130,10 +130,6 @@ section {
 }
 
 h2 {
-  color: #333;
-  text-align: left;
-}
-p {
   color: #333;
   text-align: left;
 }

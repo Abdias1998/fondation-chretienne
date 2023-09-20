@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const messageSelect = document.getElementById("message");
     const message = messageSelect.value;
+    const paysSelect = document.getElementById("pays");
+    const pays = paysSelect.value;
 
     const tel = phoneNumberInput.value;
 
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, names, subject, message, tel }),
+          body: JSON.stringify({ email, names, subject, message, pays, tel }),
         }
       );
 
@@ -60,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         subjectSelect.value = "";
         phoneNumberInput.value = "";
         messageSelect.value = "";
+        paysSelect.value = "";
 
         setTimeout(() => {
           messageParagraph.textContent = "";
