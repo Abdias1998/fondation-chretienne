@@ -98,3 +98,29 @@ setInterval(checkAndHandleIcon, 60000);
 
 // Appeler la fonction initiale
 checkAndHandleIcon();
+// Récupérer les éléments du DOM
+const openModalBtn = document.getElementById("openModalBtn");
+const videoModal = document.getElementById("videoModal");
+const closeBtn = document.querySelector(".close");
+const youtubeVideo = document.getElementById("youtubeVideo");
+
+// Fonction pour ouvrir la fenêtre modale
+function openModal() {
+  videoModal.style.display = "block";
+}
+
+// Fonction pour fermer la fenêtre modale
+function closeModal() {
+  videoModal.style.display = "none";
+  // Arrêter la vidéo YouTube lorsque la fenêtre modale est fermée
+  youtubeVideo.src = youtubeVideo.src;
+}
+
+// Écouter les événements de clic
+openModalBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", function (event) {
+  if (event.target == videoModal) {
+    closeModal();
+  }
+});
