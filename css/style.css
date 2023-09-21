@@ -1,4 +1,24 @@
 /********** Template CSS **********/
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+  grid-gap: 20px; /* Espacement entre les images */
+  max-width: 800px; /* Largeur maximale de la grille */
+  margin: 20px auto; /* Centre la grille sur la page */
+}
+
+.image {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.image img {
+  max-width: 100%; /* Pour s'assurer que l'image reste dans sa div */
+  height: auto; /* Permet à l'image de conserver son ratio */
+}
+
 /* end */
 p {
   font-family: "Montserrat", sans-serif;
