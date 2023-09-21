@@ -139,4 +139,7 @@ p {
     width: 100vw;
     height: auto;
   }
+  .flex-one {
+    flex-direction: column-reverse;
+  }
 }
