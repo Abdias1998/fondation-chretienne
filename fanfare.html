@@ -52,6 +52,97 @@
       gtag("config", "G-FSM4EQJ2E1");
     </script>
     <style>
+      /* body {
+ 
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+} */
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+        grid-gap: 20px; /* Espacement entre les images */
+        max-width: 800px; /* Largeur maximale de la grille */
+        margin: 20px auto; /* Centre la grille sur la page */
+      }
+
+      .image {
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+
+      .image img {
+        max-width: 100%; /* Pour s'assurer que l'image reste dans sa div */
+        height: auto; /* Permet à l'image de conserver son ratio */
+      }
+
+      /* end */
+      .message-box {
+        /* border: 2px solid #333; */
+        padding: 20px;
+        background: linear-gradient(135deg, #fff3d1, #ffdda1);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .message-title {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .message-author {
+        margin-top: 5px;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .message-content {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #444;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      label,
+      select,
+      input,
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #ffc400;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
       .video-container {
         display: flex;
         justify-content: center;
@@ -324,56 +415,167 @@
       </div>
     </div>
     <header>
-      <h1>Plus de 20 instruments</h1>
+      <h1>Apprenez-en sur nos formations en musique.</h1>
     </header>
+    <p style="padding: 15px">
+      Nous sommes ravis de vous annoncer qu'une nouvelle vague de formations
+      d'apprentissage, couvrant une vaste gamme d'instruments de musique, est
+      sur le point de voir le jour ! Cette opportunité exceptionnelle vous
+      permettra de plonger dans le monde enchanteur de la musique et d'acquérir
+      des compétences musicales inestimables.
+    </p>
+    <p style="padding: 15px">
+      Que vous aspiriez à jouer la trompette, de la douce mélodie du violon, du
+      rythme percutant de la batterie, ou de tout autre instrument de votre
+      choix, cette nouvelle série de formations a été conçue pour répondre à
+      tous les niveaux et à tous les désirs musicaux.
+    </p>
+    <p style="padding: 15px">
+      Nous vous invitons chaleureusement à consulter régulièrement notre site
+      Web, où les détails complets de cette seconde vague de formations seront
+      bientôt dévoilés. Assurez-vous de ne pas manquer cette occasion unique
+      d'enrichir votre vie avec la musique. Rejoignez notre communauté de la
+      Philharmonie pour rester informé(e) et faire partie d'une famille de
+      mélomanes passionnés en cliquant sur ce lien WhatsApp
+    </p>
+    <p style="margin: auto; text-align: center">
+      <button class="mui-button">Rejoignez la communauté Philharmonie</button>
+    </p>
+    <br /><br />>
+    <header>
+      <h1>
+        Explorez visuellement quelques-uns des instruments joués par
+        l'orchestre.
+      </h1>
+    </header>
+
     <div class="prayer-info-container">
       <div class="prayer-info">
         <i class=""
           ><img src="./img/violon.jpg" width="80" height="80" alt=""
         /></i>
-        <h2>Violon</h2>
+        <h4>Violon</h4>
+        <p>
+          Le violon est un instrument de musique à cordes frottées. Il se
+          compose d'un corps en forme de sablier, d'un manche avec des touches
+          et de quatre cordes en boyau ou en métal. Pour produire des sons, le
+          violoniste utilise un archet, généralement en crin de cheval, qu'il
+          fait glisser sur les cordes tout en exerçant une pression et une
+          vitesse appropriées.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/Clarinet_3D.webp" width="80" height="80" alt=""
         /></i>
-        <h2>Clarinette</h2>
+        <h4>La clarinette</h4>
+        <p>
+          La clarinette est un instrument de musique à vent en bois. Elle se
+          compose d'un corps en bois, souvent en ébène ou en grenadille, avec un
+          bec muni d'une anche simple. Pour produire des sons, le clarinettiste
+          souffle de l'air dans le bec et utilise les doigts pour couvrir et
+          découvrir les trous le long du corps de l'instrument. Chaque trou
+          représente une note différente, et en variant la combinaison des
+          doigts, le musicien peut jouer une large gamme de notes.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/drum.webp" width="80" height="80" alt=""
         /></i>
-        <h2>Tambou</h2>
+        <h4>Le Tambour</h4>
+        <p>
+          Le tambour est un instrument de percussion essentiel dans la musique
+          du monde entier. Il se compose généralement d'une peau tendue sur un
+          cadre, que l'on frappe avec les mains, les doigts ou des baguettes
+          pour produire des sons rythmiques. Les tambours peuvent varier
+          considérablement en taille, en forme et en sonorité, en fonction de
+          leur type et de leur origine culturelle.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/trumpet.png" width="80" height="80" alt=""
         /></i>
-        <h2>Trompette</h2>
+        <h4>Trompette</h4>
+        <p>
+          La trompette est un instrument de musique à vent de la famille des
+          cuivres. Elle est caractérisée par sa forme conique et son embouchure
+          en forme de petite coupe. La trompette produit des sons en vibrant les
+          lèvres de l'embouchure tout en utilisant des pistons pour changer la
+          longueur du tube, ce qui permet de produire différentes notes.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/flute.jpg" width="80" height="80" alt=""
         /></i>
-        <h2>Flûte Traversière</h2>
+        <h4>Flûte Traversière</h4>
+        <p>
+          La flûte traversière est un instrument de musique à vent en bois. Elle
+          se compose d'un tube long et mince percé de plusieurs trous. Pour
+          produire des sons, le musicien souffle de l'air dans l'embouchure de
+          la flûte traversière et couvre et découvre les trous avec les doigts
+          pour changer la hauteur des notes.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/xylophone.png" width="80" height="80" alt=""
         /></i>
-        <h2>Xylophone</h2>
+        <h4>Xylophone</h4>
+        <p>
+          Le xylophone est un instrument de percussion composé de lames de bois
+          (ou parfois de métal) de différentes longueurs, suspendues au-dessus
+          d'une série de tubes résonateurs. Pour produire des sons, le musicien
+          frappe les lames avec des maillets spéciaux en bois ou en plastique.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
       <div class="prayer-info">
         <i class=""
           ><img src="./img/Saxophone.webp" width="80" height="80" alt=""
         /></i>
-        <h2>Saxophone</h2>
+        <h4>Saxophone</h4>
+        <p>
+          Le saxophone est un instrument de musique à vent en laiton inventé par
+          Adolphe Sax au 19e siècle. Il se caractérise par son corps courbé en
+          forme de S et son bec équipé d'une anche simple. Le saxophoniste
+          produit des sons en soufflant de l'air dans le bec, ce qui fait vibrer
+          l'anche, créant ainsi le son.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
 
@@ -381,37 +583,196 @@
         <i class=""
           ><img src="./img/trombone.png" width="80" height="80" alt=""
         /></i>
-        <h2>Trombone</h2>
+        <h4>Trombone</h4>
+        <p>
+          Le trombone est un instrument de musique de la famille des cuivres. Il
+          se compose d'un long tuyau métallique en forme de courbe avec une
+          coulisse mobile. Pour produire des sons, le tromboniste souffle de
+          l'air dans l'embouchure et fait varier la longueur du tuyau coulissant
+          pour changer la hauteur des notes.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
-
       <div class="prayer-info">
         <i class=""
-          ><img src="./img/Saxophone.webp" width="80" height="80" alt=""
+          ><img src="./img/trombone.png" width="80" height="80" alt=""
         /></i>
-        <h2>Saxophone</h2>
+        <h4>Le cornet</h4>
+        <p>
+          Le cornet est un instrument de musique de la famille des cuivres. Il
+          ressemble à une petite trompette, mais il a une forme conique plus
+          prononcée. Comme la trompette, le cornet est doté d'un embouchure en
+          forme de petite coupe, et le musicien produit des sons en soufflant de
+          l'air dans l'embouchure et en utilisant les valves pour changer la
+          longueur du tube, ce qui permet de produire différentes notes.
+        </p>
+        <button class="mui-button secondary">
+          <a href="" style="color: white">commander</a>
+        </button>
+
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
     </div>
     <div class="headerTwo">
-      <h1>Suivez notre dernière prestation</h1>
+      <h1>Découvrez en images les différentes sorties de la philharmonie.</h1>
     </div>
-    <div class="video-container">
-      <!-- Remplacez ceci par le code d'intégration de votre vidéo YouTube -->
-      <iframe
-        width="560"
-        height="335"
-        src="https://www.youtube.com/embed/JQLWKEEY81c"
-        frameborder="0"
-        allowfullscreen
-        post
-      ></iframe>
+
+    <!-- <div class="video-grid">
+      <div class="video">
+        <video controls>
+          <source src="./img/vid.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+        </video>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="./img/vid.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+        </video>
+      </div>
+  
+    </div> -->
+    <div class="image-grid">
+      <div class="image">
+        <img src="./img/phil9.jpeg" alt="Image 9" />
+      </div>
+      <div class="image">
+        <img src="./img/phil1.jpg" alt="Image 1" />
+      </div>
+      <div class="image">
+        <img src="./img/phil2.jpg" alt="Image 2" />
+      </div>
+      <div class="image">
+        <img src="./img/phil3.jpg" alt="Image 3" />
+      </div>
+      <div class="image">
+        <img src="./img/all7.jfif" alt="Image 4" />
+      </div>
+      <div class="image">
+        <img src="./img/phil5.jpg" alt="Image 5" />
+      </div>
+      <div class="image">
+        <img src="./img/phil6.jpg" alt="Image 6" />
+      </div>
+      <div class="image">
+        <img src="./img/phil7.jpg" alt="Image 7" />
+      </div>
+      <div class="image">
+        <img src="./img/phil8.jpg" alt="Image 8" />
+      </div>
+
+      <div class="image">
+        <img src="./img/phil2.jpg" alt="Image 10" />
+      </div>
     </div>
-    <p style="">
-      Fusce ac felis sit amet ligula pharetra condimentum. Mauris turpis nunc,
-      blandit et, volutpat molestie, porta ut, ligula. Suspendisse eu ligula.
-      Praesent nec nisl a purus blandit viverra.
+    <header>
+      <h1>Rejoignez à présent notre philharmonie.</h1>
+    </header>
+    <p>
+      Rejoignez notre prestigieuse philharmonie en remplissant simplement notre
+      formulaire d'adhésion ! L'expérience musicale de toute une vie vous attend
+      au sein de notre orchestre renommé.
     </p>
+    <p>
+      Pour devenir membre de notre philharmonie, il vous suffit de remplir le
+      formulaire d'adhésion en ligne. Vous nous fournirez quelques informations
+      de base, telles que vos coordonnées, votre expérience musicale, et
+      l'instrument que vous jouez. Une fois votre adhésion approuvée, vous serez
+      invité(e) à rejoindre nos répétitions passionnantes et à contribuer à
+      l'art musical sous la direction de chefs d'orchestre talentueux.
+    </p>
+    <form id="subscribeForm">
+      <label for="sexe">Sexe</label>
+      <select id="sexe" name="sexe">
+        <option value="" disabled selected>Précisez</option>
+        <option value="Masculin">Masculin</option>
+        <option value="Féminin">Féminin</option>
+      </select>
+      <label for="names">Nom complet* :</label>
+      <input type="text" id="names" name="names" required />
+
+      <label for="email">Email*</label>
+      <input type="email" id="emails" name="email" required />
+
+      <label for="pays">Sélectionnez l'instrument que vous jouez :</label>
+      <select id="pays" name="pays">
+        <option value="Accordéon">Accordéon</option>
+        <option value="Batterie">Batterie</option>
+        <option value="Baryton">Baryton</option>
+
+        <option value="ContreBasse">ContreBasse</option>
+        <option value="Cornet">Cornet</option>
+        <option value="Cor d'harmonie">Cor d'harmonie</option>
+        <option value="comores">Comores</option>
+
+        <option value="Caisse claire">Caisse claire</option>
+        <option value="Clarinette">Clarinette</option>
+
+        <option value="Euphonium">Euphonium</option>
+        <option value="Flûte-traversière">Flûte-traversière</option>
+        <option value="Gong">Gong</option>
+        <option value="Saxophone-Alto">Saxophone-Alto</option>
+        <option value="Saxophone-Sopra">Saxophone-Sopra</option>
+        <option value="Trompette">Trumpette</option>
+        <option value="Tambour">Tambour</option>
+        <option value="Tuba">Tuba</option>
+        <option value="Violon">Violon</option>
+        <option value="Viola">Viola</option>
+        <option value="Violoncelle">Violoncelle</option>
+        <option value="Autre">Autre</option>
+      </select>
+      <select required class="form-control" id="subject" name="subject">
+        <option value="" disabled selected>Expérience d'année</option>
+        <option value="0-1">0-1 ans</option>
+        <option value="1-2 ans">1-2 ans</option>
+        <option value="2-5 ans">2-5 ans</option>
+        <option value="5-10 ans">5-10 ans</option>
+        <option value="10-15 ans ">10-15 ans</option>
+        <option value=">15 ">>15</option>
+      </select>
+      <label for="subject" name="subject">Sujet</label>
+      <div class="form-floating">
+        <textarea
+          required
+          class="form-control"
+          placeholder="Leave a message here"
+          id="message"
+          style="height: 100px"
+        ></textarea>
+        <label for="message">Votre Message</label>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="whatsappCheckbox"
+          />
+          <label class="form-check-label" for="whatsappCheckbox"
+            >Je souhaite être contacté sur WhatsApp</label
+          >
+        </div>
+      </div>
+      <div class="col-12" id="phoneNumberField" style="display: none">
+        <div class="form-floating">
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            placeholder="Votre numéro de téléphone"
+          />
+          <label for="phoneNumber">Numéro de téléphone</label>
+        </div>
+      </div>
+      <button id="submitButton" type="submit">Soumettre</button>
+      <p id="messageParagraph"></p>
+    </form>
+    <p id="messageParagraph"></p>
+
     <!-- <div class="containers">
       <div class="boxs box1s">
         <div class="icons">
