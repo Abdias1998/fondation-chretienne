@@ -107,6 +107,16 @@ p {
   width: 50%;
   /* Autres styles pour le premier enfant */
 }
+.child14 {
+  background-image: url("../img/action-de-grâce.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  height: 300px;
+  /* Autres styles pour le premier enfant */
+}
 
 .child2 {
   padding: 20px;
@@ -131,7 +141,8 @@ p {
   .child10,
   .child11,
   .child12,
-  .child13 {
+  .child13,
+  .child14 {
     width: 100vw;
     height: 300px;
   }
