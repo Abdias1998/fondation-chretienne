@@ -21,7 +21,7 @@
 
 /* end */
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1em;
   font-weight: 700;
 }
@@ -179,7 +179,7 @@ button {
   color: green;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /* Couleur rouge pour erreur */
 .error {

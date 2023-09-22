@@ -1,0 +1,194 @@
+body {
+  overflow-x: hidden;
+}
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blinking {
+  animation: blink 1s infinite;
+}
+/* end */
+[data-parallax="scroll"] {
+  background: linear-gradient(to bottom, #000000, #334b4f);
+}
+
+/* Reset some default button styles */
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Primary button */
+.primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Secondary button */
+.secondary {
+  background-color: #f50057;
+  color: white;
+}
+.secondary-button {
+  background-color: #ffc400;
+  color: white;
+}
+
+/* Success button */
+.success {
+  background-color: #ffc300;
+  color: white;
+}
+
+/* Danger button */
+.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  max-height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box {
+  width: 23%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 5px solid white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex; /* Utilisation de flex pour aligner côte à côte */
+  align-items: center; /* Alignement vertical au centre */
+}
+.colorTexte {
+  color: white;
+  display: none;
+}
+.action-button {
+  margin-left: 10px; /* Espacement entre le span et le button */
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.title {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  font-size: 24px;
+}
+.decalage_button {
+  height: 120%;
+}
+
+.tall-box {
+  height: 400px;
+  width: 40%;
+  /* background-color: #334B4F; */
+  /* background: linear-gradient(to bottom, #334B4F, transparent); */
+  background-image: url("./img/dalum2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.important {
+  height: 400px;
+  width: 40%;
+  background-image: url("./img/dalum.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.large-box {
+  height: 400px;
+  width: 60%;
+  background-image: url("./img/furniture.png");
+  background-size: cover;
+}
+
+.small-box {
+  height: 400px;
+  width: 60%;
+  background-image: url("./img/sun.jpg");
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+/* Ajoutez ces styles à la fin de votre feuille de style CSS */
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%; /* Les boîtes occupent toute la largeur */
+    border: none;
+  }
+  .tall-box {
+    height: 300px;
+  }
+  .important {
+    height: 300px;
+  }
+
+  .large-box {
+    height: 300px;
+  }
+
+  .small-box {
+    height: 300px;
+  }
+}
