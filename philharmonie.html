@@ -58,7 +58,33 @@
   margin: 0;
   padding: 0;
 } */
+      /* Styles pour les grands écrans */
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+      }
 
+      .image-container img {
+        width: 50%;
+        padding: 15px;
+        margin-bottom: 10px;
+        height: 20%;
+      }
+
+      /* Styles pour les petits écrans */
+      @media screen and (max-width: 768px) {
+        .image-container {
+          display: block;
+        }
+
+        .image-container img {
+          width: 100%; /* Occupe toute la largeur de l'écran */
+          margin-bottom: 10px;
+        }
+      }
       /* end */
       .message-box {
         /* border: 2px solid #333; */
@@ -384,6 +410,15 @@
           musique est plus qu'un simple divertissement, c'est une expérience de
           foi et de communauté.
         </p>
+        <div class="image-container">
+          <img src="./img/phil1.jpg" alt="Image 1" />
+          <img src="./img/phil2.jpg" alt="Image 2" />
+          <img src="./img/phil3.jpg" alt="Image 3" />
+          <img src="./img/all7.jfif" alt="Image 4" />
+          <!-- <img src="./img/jeune-des-jeunes/jeune5.jpg" alt="Image 5" />
+          <img src="./img/jeune-des-jeunes/jeune6.jpg" alt="Image 6" /> -->
+          <!-- Ajoutez autant d'images que nécessaire -->
+        </div>
         <a class="btn btn-outline-primary py-2 px-3" href="">
           Visiter le site web
           <div
@@ -444,7 +479,15 @@
           vitesse appropriées.
         </p>
         <button class="mui-button secondary">
-          <a href="" style="color: white">commander</a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=`Nous sommes désireux d'acheter cet instrument(Violon).
+          `
+          
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
         </button>
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
@@ -596,9 +639,9 @@
         <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
       </div>
     </div>
-    <header>
+    <!-- <header>
       <h1>Découvrez en images les différentes sorties de la philharmonie.</h1>
-    </header>
+    </header> -->
 
     <!-- <div class="video-grid">
       <div class="video">
@@ -615,7 +658,7 @@
       </div>
   
     </div> -->
-    <div class="image-grid">
+    <!-- <div class="image-grid">
       <div class="image">
         <img src="./img/phil9.jpeg" alt="Image 9" />
       </div>
@@ -647,7 +690,7 @@
       <div class="image">
         <img src="./img/phil2.jpg" alt="Image 10" />
       </div>
-    </div>
+    </div> -->
     <header>
       <h1>
         Rejoignez à présent notre philharmonie et continuez l'aventure avec
