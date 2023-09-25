@@ -524,7 +524,7 @@
     <!-- JavaScript Libraries -->
     <script>
         // Fonction pour extraire les paramètres d'URL en JavaScript
-        function getParameterByName(name, url) {
+       async(name, url)=> {
           if (!url) url = window.location.href;
           name = name.replace(/[\[\]]/g, "\\$&");
           var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
