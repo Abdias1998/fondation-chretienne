@@ -73,37 +73,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Fonction pour extraire les paramètres d'URL en JavaScript
-function getParameterByName(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-    results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return "";
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
+// // Fonction pour extraire les paramètres d'URL en JavaScript
+// function getParameterByName(name, url) {
+//   if (!url) url = window.location.href;
+//   name = name.replace(/[\[\]]/g, "\\$&");
+//   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+//     results = regex.exec(url);
+//   if (!results) return null;
+//   if (!results[2]) return "";
+//   return decodeURIComponent(results[2].replace(/\+/g, " "));
+// }
 
-// Récupérez la valeur du paramètre d'URL "id2"
-var id2 = getParameterByName("id2");
+// // Récupérez la valeur du paramètre d'URL "id2"
+// var id2 = getParameterByName("id2");
 
-// Affichez la valeur dans la console
-console.log("Valeur de id2 : " + id2);
+// // Affichez la valeur dans la console
+// console.log("Valeur de id2 : " + id2);
 
-// Effectuez une requête GET vers l'URL backend avec id2
-var backendUrl = `https://backend-lagraceparle.onrender.com/api/v1/subscribe-confirm/${id2}`;
+// // Effectuez une requête GET vers l'URL backend avec id2
+// var backendUrl = `https://backend-lagraceparle.onrender.com/api/v1/subscribe-confirm/${id2}`;
 
-// Utilisation de la méthode fetch pour effectuer la requête GET
-fetch(backendUrl)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("La requête a échoué");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Réponse du backend :", data);
-  })
-  .catch((error) => {
-    console.error("Erreur lors de la requête :", error);
-  });
+// // Utilisation de la méthode fetch pour effectuer la requête GET
+// fetch(backendUrl)
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("La requête a échoué");
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log("Réponse du backend :", data);
+//   })
+//   .catch((error) => {
+//     console.error("Erreur lors de la requête :", error);
+//   });
