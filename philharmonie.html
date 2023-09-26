@@ -59,6 +59,29 @@
   margin: 0;
   padding: 0;
 } */
+      .container_video {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* height: 300px; */
+        background-color: #f0f0f0; /* Couleur d'arrière-plan */
+      }
+
+      .video-container {
+        width: 100vw; /* Largeur maximale de la vidéo */
+      }
+
+      video {
+        width: 95%;
+        height: auto;
+        display: block;
+      }
+
+      /* end */
       /* Styles pour les grands écrans */
       .image-container {
         display: flex;
@@ -454,6 +477,15 @@
       Philharmonie pour rester informé(e) et faire partie d'une famille de
       mélomanes passionnés en cliquant sur ce lien WhatsApp
     </p>
+    <br />
+    <div class="container_video">
+      <div class="video-container">
+        <video controls>
+          <source src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
     <p style="margin: auto; text-align: center">
       <button class="mui-button">
         <a

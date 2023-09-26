@@ -98,6 +98,7 @@ setInterval(checkAndHandleIcon, 60000);
 
 // Appeler la fonction initiale
 checkAndHandleIcon();
+
 // Récupérer les éléments du DOM
 const openModalBtn = document.getElementById("openModalBtn");
 const videoModal = document.getElementById("videoModal");
