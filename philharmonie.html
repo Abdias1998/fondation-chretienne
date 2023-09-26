@@ -241,6 +241,16 @@
         </video>
       </div>
     </div>
+    <!-- Le modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <video id="videoElement" controls>
+          <source src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
 
    
     <!-- Spinner Start -->
@@ -527,9 +537,24 @@
     <header>
       <h1>Découvrez quelques-unes de nos prestations en vidéo.</h1>
     </header>
-    
-    <p style="padding: 15px">Cette vidéo offre un aperçu authentique du processus de création musicale au sein de notre philharmonie. Vous pourrez voir nos musiciens talentueux en plein travail, collaborant sous la direction du chef d'orchestre pour peaufiner chaque note, chaque crescendo, et chaque nuance musicale. C'est une opportunité unique de découvrir les coulisses de notre préparation avant nos performances publiques et d'apprécier le dévouement et la passion que nous investissons dans chaque morceau que nous jouons.</p>
-    <p style="padding: 15px;text-align: center;" class="button_video">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
+    <p style="padding: 15px">Vous pouvez découvrir une vidéo de jazz exceptionnelle, produite au prestigieux Centre La Grâce Parle. Cette vidéo vous offre une expérience musicale envoûtante, où la virtuosité des musiciens se mêle à l'ambiance unique du Centre pour créer une performance inoubliable. Plongez dans l'univers envoûtant du jazz et laissez-vous emporter par la magie de cette vidéo captivante, enregistrée au cœur de ce lieu emblématique.</p>
+      <p class="button_video"  style="padding: 15px;text-align: center;">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
+  </p>
+   
+    <div class="container_video">
+      <div class="video-container">
+        <video style="object-fit: cover;"  controls>
+          <source  src="./video/video-philharmonie-jazz.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+  
+   
+    <br />
+    <!-- <p style="padding: 15px">Cette vidéo offre un aperçu authentique du processus de création musicale au sein de notre philharmonie. Vous pourrez voir nos musiciens talentueux en plein travail, collaborant sous la direction du chef d'orchestre pour peaufiner chaque note, chaque crescendo, et chaque nuance musicale. C'est une opportunité unique de découvrir les coulisses de notre préparation avant nos performances publiques et d'apprécier le dévouement et la passion que nous investissons dans chaque morceau que nous jouons.</p>
+     -->
+    <!-- <p style="padding: 15px;text-align: center;" class="button_video">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
   </p>
     <p style="padding: 15px;"></p>
     <div class="container_video">
@@ -539,25 +564,11 @@
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </div>
-    </div>
+    </div> -->
   
    
     <br />
-    <p style="padding: 15px">Vous pouvez découvrir une vidéo de jazz exceptionnelle, produite au prestigieux Centre La Grâce Parle. Cette vidéo vous offre une expérience musicale envoûtante, où la virtuosité des musiciens se mêle à l'ambiance unique du Centre pour créer une performance inoubliable. Plongez dans l'univers envoûtant du jazz et laissez-vous emporter par la magie de cette vidéo captivante, enregistrée au cœur de ce lieu emblématique.</p>
-      <p class="button_video"  style="padding: 15px;text-align: center;">  <button class="mui-button primary"><a style="color: white;" href="tel:*880*41*100000*">VOIR LA VIDEO</a></button>
-  </p>
-   
-    <div class="container_video">
-      <div class="video-container">
-        <video style="object-fit: cover;" poster="./video/poster-phil.png"  controls>
-          <source  src="./video/video-philharmonie.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-      </div>
-    </div>
-  
-   
-    <br />
+    
     
  
       <header>
@@ -1218,7 +1229,7 @@
       // Lorsque vous cliquez sur le bouton "Ouvrir la vidéo"
       openTwo.addEventListener("click", function () {
         // Définissez la source de la vidéo ici
-        videoElement.src = "./video/video-philharmonie.mp4"; // Correction ici
+        videoElement.src = "./video/video-philharmonie-jazz.mp4"; // Correction ici
         modal.style.display = "block";
       });
 
