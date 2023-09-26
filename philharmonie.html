@@ -59,25 +59,29 @@
   margin: 0;
   padding: 0;
 } */
+
+/* end */
       .container_video {
+       
         overflow: hidden;
         margin: 0;
         padding: 0;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         width: 100%;
-        /* height: 300px; */
+        /* height: auto; */
         background-color: #f0f0f0; /* Couleur d'arrière-plan */
       }
 
       .video-container {
+        
         width: 100vw; /* Largeur maximale de la vidéo */
       }
 
       video {
         width: 95%;
-        height: auto;
+        height: 600px;
         display: block;
       }
 
@@ -108,6 +112,24 @@
           width: 100%; /* Occupe toute la largeur de l'écran */
           margin-bottom: 10px;
         }
+        .container_video {
+       
+   
+       display: block;
+  
+     }
+
+        video {
+        width: 95%;
+        height: 300px;
+        display: block;
+      }
+      .button_video{
+        display: none;
+      }
+      #videoModal{
+        display: none;
+      }
       }
       /* end */
       .message-box {
@@ -207,6 +229,20 @@
     </style>
   </head>
   <body>
+
+
+    <!-- Le modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <video id="videoElement" controls>
+          <source src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+
+   
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -435,7 +471,7 @@
           foi et de communauté.
         </p>
         <div class="image-container">
-          <img src="./img/phil1.jpg" alt="Image 1" />
+          <img src="./img/phil9.jpeg" alt="Image 1" />
           <img src="./img/phil2.jpg" alt="Image 2" />
           <img src="./img/phil3.jpg" alt="Image 3" />
           <img src="./img/all7.jfif" alt="Image 4" />
@@ -488,6 +524,29 @@
       </button>
     </p>
     <br />
+    <header>
+      <h1>Découvrez quelques-unes de nos prestations en vidéo.</h1>
+    </header>
+    
+    <p style="padding: 15px">Cette vidéo offre un aperçu authentique du processus de création musicale au sein de notre philharmonie. Vous pourrez voir nos musiciens talentueux en plein travail, collaborant sous la direction du chef d'orchestre pour peaufiner chaque note, chaque crescendo, et chaque nuance musicale. C'est une opportunité unique de découvrir les coulisses de notre préparation avant nos performances publiques et d'apprécier le dévouement et la passion que nous investissons dans chaque morceau que nous jouons.</p>
+    <p style="padding: 15px;text-align: center;" class="button_video">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
+  </p>
+    <p style="padding: 15px;"></p>
+    <div class="container_video">
+      <div class="video-container">
+        <video style="object-fit: cover;"  controls>
+          <source  src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+  
+   
+    <br />
+    <p style="padding: 15px">Vous pouvez découvrir une vidéo de jazz exceptionnelle, produite au prestigieux Centre La Grâce Parle. Cette vidéo vous offre une expérience musicale envoûtante, où la virtuosité des musiciens se mêle à l'ambiance unique du Centre pour créer une performance inoubliable. Plongez dans l'univers envoûtant du jazz et laissez-vous emporter par la magie de cette vidéo captivante, enregistrée au cœur de ce lieu emblématique.</p>
+      <p class="button_video"  style="padding: 15px;text-align: center;">  <button class="mui-button primary"><a style="color: white;" href="tel:*880*41*100000*">VOIR LA VIDEO</a></button>
+  </p>
+   
     <div class="container_video">
       <div class="video-container">
         <video style="object-fit: cover;" poster="./video/poster-phil.png"  controls>
@@ -496,6 +555,7 @@
         </video>
       </div>
     </div>
+  
    
     <br />
     
@@ -1148,5 +1208,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      // Obtenez les éléments HTML nécessaires
+      var modal = document.getElementById("videoModal");
+      var openTwo = document.getElementById("openTwo");
+      var closeModalBtn = document.getElementById("closeModalBtn");
+      var videoElement = document.getElementById("videoElement"); // Correction ici
+
+      // Lorsque vous cliquez sur le bouton "Ouvrir la vidéo"
+      openTwo.addEventListener("click", function () {
+        // Définissez la source de la vidéo ici
+        videoElement.src = "./video/video-philharmonie.mp4"; // Correction ici
+        modal.style.display = "block";
+      });
+
+      // Lorsque vous cliquez sur le bouton de fermeture ou en dehors du modal
+      closeModalBtn.addEventListener("click", function () {
+        videoElement.src = ""; // Correction ici
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          videoElement.src = ""; // Correction ici
+          modal.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
