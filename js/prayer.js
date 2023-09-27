@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            email,
+            // email,
             names,
             subject,
             message,
             tel,
-            sexe,
+            // sexe,
             pays,
           }),
         }
