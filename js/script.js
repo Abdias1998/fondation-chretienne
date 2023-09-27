@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
         subscribeForm.style.display = "none";
         textLong.style.display = "none";
         text.innerHTML =
-          "<p style='padding:15px'>Merci beaucoup pour votre inscription.</p>" +
+          "<div style='   background-color: #f5f5f5;margin:10px'><p style='padding:15px'>Merci beaucoup pour votre inscription.</p>" +
           "<p style='padding:15px'>Votre email a été ajouté à notre liste de contacts, mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation. Veuillez répondre à ce mail par « oui ».</p>" +
           "<p style='padding:15px'>Nous espérons que vous serez encouragé par la Pensée de La Grâce Parle.</p>" +
-          "<p style='padding:15px'>Votre équipe La Grâce Parle</p>";
+          "<p style='padding:15px'>Votre équipe La Grâce Parle</p></div>";
 
         setTimeout(() => {
           messageParagraph.textContent = "";
