@@ -131,9 +131,24 @@
           <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.html" class="nav-item nav-link ">Accueil</a>
             <a href="about.html" class="nav-item nav-link">À propos</a>
-            <a href="donate.html" class="nav-item nav-link active">Faire un don à la fondation</a>
-        
-  
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                >Soutien et Engagements</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="newsletter.html" class="dropdown-item">Newsletter</a>
+                <a href="prayer.html" class="dropdown-item "
+                  >Envoyer des requêtes de prière</a
+                >
+                <a href="donate.html" class="dropdown-item active"
+                  >Faire un don à la fondation</a
+                >
+              </div>
+            </div>
+
           
             <div class="nav-item dropdown">
               <a
@@ -189,12 +204,7 @@
                 <a href="contact.html" class="dropdown-item"
                   >Nous écrire un e-mail</a
                 >
-                <a href="newsletter.html" class="dropdown-item"
-                  >Newsletter</a
-                >
-                <a href="prayer.html" class="dropdown-item"
-                  >Demander une prière</a
-                >
+            
                 <a href="faq.html" class="dropdown-item">Faq</a>
               </div>
             </div>
@@ -292,115 +302,117 @@
    </div>
  </div>
  <!-- Donate End -->
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <p>  <a  href="index.html" class="navbar-brand ms-4 ms-lg-0">
-              <h6 style="font-size: 20px;" class="fw-bold text-primary m-0">
-                <img src="./img/logo.jfif" width="35" style="border-radius: 100%" />
-                La Grâce<span class="text-white"> Parle</span>
-              </h6>
-            </a></p>
-            <p>
-              L'emplacement du centre se trouve en face de Santé pour tous à
-              Jéricho
-            </p>
-            <div class="d-flex pt-2">
-              <!-- <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a> -->
-              <a
-                class="btn btn-square me-1"
-                href="https://www.facebook.com/Samuel.DALUM"
-                target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-square me-1"
-                href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
-                target="_blank"
-                ><i aria-colcount="fab"
-                  ><img src="img/tik-tok.png" alt="tiktok" /></i
-              ></a>
-              <a
-                class="btn btn-square me-1"
-                href="https://www.instagram.com/la_grace_parle/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                class="btn btn-square me-1"
-                href="https://www.youtube.com/@lagraceparle8000/videos"
-                target="_blank"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <!-- <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Adresse</h5>
-            <p>
-              <i class="fa fa-map-marker-alt me-3"></i>Jéricho, Face santé pour
-              tous
-            </p>
-            <p><i class="fa fa-phone-alt me-3"></i>+229 97 96 38 96</p>
-            <p><i class="fa fa-envelope me-3"></i>contact@lagraceparle.org</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Liens rapides</h5>
-            <a class="btn btn-link" href="about.html"> À propos</a>
-            <a class="btn btn-link" href="contact.html">Contactez-nous</a>
-            <!-- <a class="btn btn-link" href="service.html">Nos services</a> -->
-            <a class="btn btn-link" href="mentions.html">Termes et condition</a>
-            <a class="btn btn-link" href="faq.html">Faq</a>
-          </div>
+ <!-- Footer Start -->
+ <div
+ class="container-fluid bg-dark text-white-50 footer mt-5 fadeIn"
+ data-wow-delay="0.1s"
+>
+ <div class="container py-5">
+   <div class="row g-5">
+     <div class="col-lg-3 col-md-6">
 
-          <form class="col-lg-3 col-md-6" id="subscribeForm">
-            <div>
-              <h5 class="text-light mb-4">Newsletter</h5>
-              <p>Recevrez nos dernières actualités et mises à jour.</p>
-              <div class="position-relative mx-auto" style="max-width: 800px">
-                <p id="messageParagraph"></p>
-                <!-- <input
-                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                  type="email"
-                  id="emails"
-                  name="email"
-                  required
-                  placeholder="Votre email"
-                /> -->
-                <a
-                  id="openModalButton"
-                  href="newsletter.html"
-                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                >
-                  Je m'abonne
-                </a>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="container-fluid copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="index.html">Fondation La Grâce Parle</a>, tous
-              droits réservés.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By <a href="index.html">La Grâce Parle</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
+ <p>  <a  href="index.html" class="navbar-brand ms-4 ms-lg-0">
+   <h6 style="font-size: 20px;" class="fw-bold text-primary m-0">
+     <img alt="logo" src="./img/logo.jfif" width="35" style="border-radius: 100%" />
+     La Grâce<span class="text-white"> Parle</span>
+   </h6>
+ </a></p>
+       <p>
+         L'emplacement du centre se trouve en face de Santé pour tous à
+         Jéricho
+       </p>
+       <div class="d-flex pt-2">
+         <!-- <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a> -->
+         <a
+           class="btn btn-square me-1"
+           href="https://www.facebook.com/Samuel.DALUM"
+           target="_blank"
+           ><i class="fab fa-facebook-f"></i
+         ></a>
+         <a
+           class="btn btn-square me-1"
+           href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+           target="_blank"
+           ><i aria-colcount="fab"
+             ><img src="img/tik-tok.png" alt="tiktok" /></i
+         ></a>
+         <a
+           class="btn btn-square me-1"
+           href="https://www.instagram.com/la_grace_parle/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+           target="_blank"
+           ><i class="fab fa-instagram"></i
+         ></a>
+         <a
+           class="btn btn-square me-1"
+           href="https://www.youtube.com/@lagraceparle8000/videos"
+           target="_blank"
+           ><i class="fab fa-youtube"></i
+         ></a>
+         <!-- <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+       </div>
+     </div>
+     <div class="col-lg-3 col-md-6">
+       <h5 class="text-light mb-4">Adresse</h5>
+       <p>
+         <i class="fa fa-map-marker-alt me-3"></i>Jéricho, Face santé pour
+         tous
+       </p>
+       <p><i class="fa fa-phone-alt me-3"></i>+229 97 96 38 96</p>
+       <p><i class="fa fa-envelope me-3"></i>contact@lagraceparle.org</p>
+     </div>
+     <div class="col-lg-3 col-md-6">
+       <h5 class="text-light mb-4">Liens rapides</h5>
+       <a class="btn btn-link" href="about.html"> À propos</a>
+       <a class="btn btn-link" href="contact.html">Contactez-nous</a>
+       <!-- <a class="btn btn-link" href="service.html">Nos services</a> -->
+       <a class="btn btn-link" href="mentions.html">Termes et condition</a>
+       <a class="btn btn-link" href="faq.html">Faq</a>
+     </div>
 
+     <form class="col-lg-3 col-md-6" id="subscribeForm">
+       <div>
+         <h5 class="text-light mb-4">Newsletter</h5>
+         <p>Recevrez nos dernières actualités et mises à jour.</p>
+         <div class="position-relative mx-auto" style="max-width: 800px">
+           <p id="messageParagraph"></p>
+      
+           <a
+             id="openModalButton"
+             href="newsletter.html"
+             class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+           >
+             Je m'abonne
+           </a>
+         </div>
+       </div>
+     </form>
+   </div>
+ </div>
+ <div class="container-fluid copyright">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+         &copy; <a href="index.html">Fondation La Grâce Parle</a>, tous
+         droits réservés.
+       </div>
+       <div class="col-md-6 text-center text-md-end">
+    
+         Designed By <a href="index.html">La Grâce Parle</a>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div id="live-icon" style="display: none;">      <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">  <img src="./img/live2.webp" style="z-index: 10000;  position: fixed;bottom: 100px;left: 10;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
+ </div>
+
+
+
+ 
+ <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
+   <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 30px;left: 10;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
+</a>
+</div>
+<!-- Footer End -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
