@@ -25,10 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     submit.textContent = "Envoi en cours...";
     submit.disabled = true; // Désactiver le bouton pendant la requête
 
-    const emailInput = document.getElementById("emails");
-    const email = emailInput.value;
-    const sexeInput = document.getElementById("sexe");
-    const sexe = sexeInput.value;
     const paysInput = document.getElementById("pays");
     const pays = paysInput.value;
 
@@ -67,19 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
         messageParagraph.textContent = `
         Nous vous remercions sincèrement d'avoir partagé votre demande de prière avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos prières.
         
-        La foi est une force puissante, et nous croyons que Dieu entend nos prières et répond à nos besoins selon Sa volonté. Nous vous encourageons à garder la foi et à croire que Dieu est à l'œuvre dans votre vie. Même lorsque les réponses ne sont pas immédiates, continuez à prier et à avoir confiance en Sa bonté et en Sa sagesse.
-        
-        Nous sommes là pour vous soutenir dans cette période de prière et d'attente. Si vous avez d'autres besoins spirituels ou des questions, n'hésitez pas à nous contacter à tout moment.
-        
         Que la paix de Dieu qui dépasse toute compréhension vous remplisse et que Sa grâce abonde dans votre vie.`;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
-        emailInput.value = "";
         nameInput.value = "";
         subjectSelect.value = "";
         phoneNumberInput.value = "";
         messageSelect.value = "";
-        sexeInput.value = "";
+
         paysInput.value = "";
 
         setTimeout(() => {
