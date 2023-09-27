@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById("names");
     const names = nameInput.value;
 
-    const audioSelect = document.getElementById("audio");
-    const audio = audioSelect.value;
+    // const audioSelect = document.getElementById("audio");
+    // const audio = audioSelect.value;
 
-    const videoSelect = document.getElementById("video");
-    const video = videoSelect.value;
+    // const videoSelect = document.getElementById("video");
+    // const video = videoSelect.value;
 
     try {
       const response = await fetch(
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, names, audio, video }),
+          body: JSON.stringify({ email, names }),
         }
       );
 
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
         subscribeForm.style.display = "none";
         textLong.style.display = "none";
         text.innerHTML =
-          "<p>Merci beaucoup pour votre inscription. </p>" +
-          "<p>Votre email a été ajouté à notre liste de contacts mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation. Veuillez cliquer sur le bouton bleu afin de confirmer votre abonnement.</p>" +
+          "<p>Merci beaucoup pour votre inscription.</p>" +
+          "<p>Votre email a été ajouté à notre liste de contacts, mais doit être confirmé. Dans quelques minutes, vous recevrez un email contenant un lien de confirmation. Veuillez répondre à ce mail par « oui ».</p>" +
           "<p>Nous espérons que vous serez encouragé par la Pensée de La Grâce Parle.</p>" +
           "<p>Votre équipe La Grâce Parle</p>";
 

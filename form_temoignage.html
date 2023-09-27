@@ -52,8 +52,23 @@
       gtag("config", "G-FSM4EQJ2E1");
     </script>
     <style>
+      /* Styles pour l'arrière-plan de la peinture */
+      .painting-background {
+        background-color: #cd1719; /* Rouge */
+        padding: 3px; /* Espace intérieur autour du h1 */
+        text-align: center;
+        position: relative;
+        top: 50%;
+      }
+
+      /* Styles pour le h1 */
+      .painting-background h1 {
+        font-weight: bolder;
+        /* font-size: large; */
+        color: white; /* Couleur du texte blanc sur fond rouge */
+      }
+      /* end */
       body {
-        font-family: "Open Sans", sans-serif;
         margin: 0;
         padding: 0;
       }
@@ -339,26 +354,20 @@
             </div>
             <h3>Qu’est-ce que Dieu a fait dans votre vie ?</h3>
             <p class="mb-4">
-              Éprouvez-vous des sentiments de reconnaissance envers Dieu ? Si
-              c'est le cas, n'hésitez pas à partager ce qu'il a accompli dans
-              votre vie. Il ne s'agit pas nécessairement de réalisations
-              majeures ; parfois, ce sont les événements simples de la vie
-              quotidienne qui illustrent à quel point il nous comprend, nous
-              aime, et nous donnent de nombreuses raisons d'être reconnaissants.
-            </p>
-            <p>
-              Pour procéder, veuillez simplement remplir le formulaire, et un
-              membre de notre équipe vous contactera pour vous guider dans les
-              étapes à suivre.
+              Avez-vous remarqué des changements dans votre vie grâce au
+              Seigneur ? Avez-vous constaté une amélioration de votre situation
+              ? Nous vous encourageons à partager votre témoignage, car un
+              témoignage est une source de force et un puissant moyen de montrer
+              votre gratitude envers Dieu.
             </p>
 
             <form id="subscribeForm">
-              <label for="sexe">Sexe</label>
+              <!-- <label for="sexe">Sexe</label>
               <select id="sexe" name="sexe">
                 <option value="" disabled selected>Précisez</option>
                 <option value="Masculin">Masculin</option>
                 <option value="Féminin">Féminin</option>
-              </select>
+              </select> -->
               <label for="names">Nom complet* :</label>
               <input
                 placeholder="Votre Nom Complet"
@@ -367,14 +376,14 @@
                 name="names"
                 required
               />
-              <label for="tel">Téléphone* :</label>
+              <!-- <label for="tel">Téléphone* :</label>
               <input
                 type="text"
                 placeholder="Numéro de téléphone"
                 id="tel"
                 name="tel"
                 required
-              />
+              /> -->
 
               <label for="pays">Sélectionnez un pays africain :</label>
               <select id="pays" name="pays">
@@ -473,15 +482,22 @@
             style="min-height: 450px"
           >
             <div class="position-relative rounded overflow-hidden h-100">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1667.1664456324079!2d2.4434762930437057!3d6.366552788362985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10235523b3b782a7%3A0x93ae0207759f5365!2sRue%201403%2C%20Cotonou!5e0!3m2!1sfr!2sbj!4v1692020954815!5m2!1sfr!2sbj"
-                width="800"
-                height="600"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <div
+                style="
+                  opacity: 0.6;
+                  object-fit: cover;
+                  background-image: url(./img/worlder.png);
+                  width: 100%;
+                  height: 100%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="painting-background">
+                  <h1>Les Témoins de La Grâce</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
