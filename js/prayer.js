@@ -56,11 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (response.ok) {
-        messageParagraph.textContent = `
-        Nous vous remercions sincèrement d'avoir partagé votre demande de prière avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos prières.
+        messageParagraph.innerHTML = `<p style='padding:15px'>  Nous vous remercions sincèrement d'avoir partagé votre demande de prière avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos prières.
 
         
-        Que la paix de Dieu qui dépasse toute compréhension vous remplisse et que Sa grâce abonde dans votre vie.`;
+        Que la paix de Dieu qui dépasse toute compréhension vous remplisse et que Sa grâce abonde dans votre vie.
+        </p>
+      `;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
         nameInput.value = "";
