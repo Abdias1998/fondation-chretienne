@@ -1,16 +1,16 @@
-const whatsappCheckbox = document.getElementById("whatsappCheckbox");
-const phoneNumberField = document.getElementById("phoneNumberField");
-const phoneNumberInput = document.getElementById("phoneNumber");
+// const whatsappCheckbox = document.getElementById("whatsappCheckbox");
+// const phoneNumberField = document.getElementById("phoneNumberField");
+// const phoneNumberInput = document.getElementById("phoneNumber");
 
-whatsappCheckbox.addEventListener("change", function () {
-  if (whatsappCheckbox.checked) {
-    phoneNumberField.style.display = "block";
-    phoneNumberInput.required = true;
-  } else {
-    phoneNumberField.style.display = "none";
-    phoneNumberInput.required = false;
-  }
-});
+// whatsappCheckbox.addEventListener("change", function () {
+//   if (whatsappCheckbox.checked) {
+//     phoneNumberField.style.display = "block";
+//     phoneNumberInput.required = true;
+//   } else {
+//     phoneNumberField.style.display = "none";
+//     phoneNumberInput.required = false;
+//   }
+// });
 document.addEventListener("DOMContentLoaded", () => {
   const subscribeForm = document.getElementById("subscribeForm");
   const messageParagraph = document.getElementById("messageParagraph");
@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById("names");
     const names = nameInput.value;
 
-    const subjectSelect = document.getElementById("subject");
-    const subject = subjectSelect.value;
+    // const subjectSelect = document.getElementById("subject");
+    // const subject = subjectSelect.value;
 
     const messageSelect = document.getElementById("message");
     const message = messageSelect.value;
 
-    const tel = phoneNumberInput.value;
+    // const tel = phoneNumberInput.value;
 
     try {
       const response = await fetch(
@@ -48,12 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            // email,
             names,
-            subject,
             message,
-            tel,
-            // sexe,
             pays,
           }),
         }
@@ -62,13 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         messageParagraph.textContent = `
         Nous vous remercions sincèrement d'avoir partagé votre demande de prière avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos prières.
+
         
         Que la paix de Dieu qui dépasse toute compréhension vous remplisse et que Sa grâce abonde dans votre vie.`;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
         nameInput.value = "";
-        subjectSelect.value = "";
-        phoneNumberInput.value = "";
+        // subjectSelect.value = "";
+        // phoneNumberInput.value = "";
         messageSelect.value = "";
 
         paysInput.value = "";
