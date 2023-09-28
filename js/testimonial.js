@@ -12,16 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
     submit.textContent = "Envoi en cours...";
     submit.disabled = true; // Désactiver le bouton pendant la requête
 
-    const sexeInput = document.getElementById("sexe");
-    const sexe = sexeInput.value;
+    // const sexeInput = document.getElementById("sexe");
+    // const sexe = sexeInput.value;
     const paysInput = document.getElementById("pays");
     const pays = paysInput.value;
 
     const nameInput = document.getElementById("names");
     const names = nameInput.value;
 
-    const telSelect = document.getElementById("tel");
-    const tel = telSelect.value;
+    // const telSelect = document.getElementById("tel");
+    // const tel = telSelect.value;
 
     const messageSelect = document.getElementById("message");
     const message = messageSelect.value;
@@ -36,24 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           body: JSON.stringify({
             names,
-            tel,
+
             message,
-            sexe,
+
             pays,
           }),
         }
       );
 
       if (response.ok) {
-        messageParagraph.textContent = `
-        Nous vous remercions sincèrement d'avoir partagé votre témoignage avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos publications de témoignage.`;
+        messageParagraph.innerHTML = `<p style='padding:15px'>
+        Nous vous remercions sincèrement d'avoir partagé votre témoignage avec nous. Nous tenons à vous informer que nous avons bien reçu votre demande et que nous allons la prendre en compte dans nos publications de témoignage.
+        </p>
+      `;
         messageParagraph.classList.remove("error");
         messageParagraph.classList.add("success");
 
         nameInput.value = "";
 
         messageSelect.value = "";
-        sexeInput.value = "";
+        // sexeInput.value = "";
         paysInput.value = "";
 
         setTimeout(() => {
