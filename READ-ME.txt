@@ -9,7 +9,74 @@
   =>  Author Website   : https://htmlcodex.com
   .\git-script.ps1 "Commit automatisé"
 
-  
+  Nous avons reçu votre désinscription.
+
+Votre email a bien été retiré de notre liste de contacts. Vous pouvez bien entendu vous inscrire à nouveau à la Pensée de Joyce à tout moment.
+
+Pour toute question, veuillez nous écrire un email.
+
+Votre équipe Joyce Meyer
+
+
+ .\git-script.ps1 "Commit automatisé"
+
+ Nous avons distribué plus de 700 millions de repas en 2022 dans plus de 100 pays, leur fournissant ainsi de la nourriture et des produits de première nécessité. Cette année, nous visons à distribuer un milliard de repas. Rejoignez-nous en faisant un don à cette campagne.
+
+ Salut [Nom du destinataire] !
+
+J'espère que tu vas bien. J'ai récemment pris connaissance du document que tu as partagé, et il a attiré mon attention. Cependant, j'aimerais en savoir plus à son sujet.
+
+- Pourrais-tu me donner quelques détails sur le contenu du document ?
+- Quel est l'objectif principal de ce document ?
+- Qui en est l'auteur ou la source ?
+- Y a-t-il des points clés que tu aimerais que je retienne en le lisant ?
+- Est-ce que tu as des recommandations spécifiques pour une lecture approfondie ?
+
+Je suis vraiment intéressé par ce sujet, donc toute information supplémentaire que tu pourrais fournir serait très appréciée. Si tu as le temps, peut-être pourrions-nous discuter davantage de son contenu ou de son contexte.
+
+Merci d'avance pour ton aide, et j'attends avec impatience d'en savoir plus sur ce document.
+
+Meilleures salutations,
+[Ton nom]
+
+
+Sur consentement, nous avon bésoin de mettre en ligne trois témoignage? un homme et deux soeurs. Le nom et prénom des témoins
+
+
+  <div class="prayer-info-container">
+          <div class="prayer-info">
+            <!-- <i class=""
+              ><img src="./img/church.png" width="80" height="80" alt=""
+            /></i> -->
+            <h2>Mardi</h2>
+            <p>
+              <strong><img src="./img/sun.webp" alt="" /></strong>
+              12h30 - 15h00
+            </p>
+          </div>
+          <div class="prayer-info">
+            <!-- <i class=""
+              ><img src="./img/prayer-icon2.png" width="80" height="80" alt=""
+            /></i> -->
+            <h2>Vendredi</h2>
+            <p>
+              <strong><img src="./img/lune.webp" alt="" /></strong> 19h00 -
+              22h00
+            </p>
+          </div>
+          <div class="prayer-info">
+            <!-- <i class=""
+              ><img src="./img/prayer-icon3.png" width="80" height="80" alt=""
+            /></i> -->
+            <h2>Dimanche</h2>
+            <p>
+              <strong><img src="./img/sun-midi.webp" alt="" /></strong> 16h00 -
+              20h00
+            </p>
+          </div>
+        </div>
+
+
         CONFIGURER LE SCRIPT DE POWERSHELL
         Get-ExecutionPolicy
 Set-ExecutionPolicy Unrestricted(Appuie sur Oui)
