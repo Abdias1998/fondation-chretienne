@@ -85,21 +85,46 @@ button {
   font-weight: 600;
   color: #fff;
 }
+.custom-button {
+  display: inline-block;
+        width: 236px;
+        height: 47px;
+        background-color: transparent;
+        border: 2px solid white; /* Bordure blanche de 2px */
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        margin-top: 7%;
+        font-size: 24px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; /* Transition pour le survol */
+      }
 
+      .custom-button:hover {
+        background-color: white; /* Fond blanc au survol */
+        color: black; /* Texte noir au survol */
+      }
 /* Primary button */
 .primary {
-  background-color: #1976d2;
+  background-color: #B3733F;
   color: white;
 }
 
 /* Secondary button */
 .secondary {
-  background-color: #4B7462;
+  background-color: #D84404;
   color: white;
 }
 .secondary-button {
   background-color: #FFC400;
   color: white;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    margin-top: 5%;
 }
 
 /* Success button */
@@ -110,7 +135,7 @@ button {
 
 /* Danger button */
 .danger {
-  background-color: #f44336;
+  background-color: #5D5D5D;
   color: white;
 }
 
@@ -453,18 +478,19 @@ background-image: url("./img/dalum2.jpg");
                     <h3 class="display-4 text-white mb-3 animated slideInDown">
                       Illuminant les âmes égarées, Diffusant l'amour de Jésus-Christ.
                     </h3>
-                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                    <a class="custom-button" href="ministere.html">DÉCOUVRIR</a>
+                    <!-- <p class="fs-5 text-white-50 mb-5 animated slideInDown">
                       À travers l'amour du Christ, nous guidons les âmes
                       perdues, offrant espoir, réconfort et but pour illuminer
                       leur chemin. jgjg
-                    </p>
-                          <button class="mui-button secondary-button"><a href="ministere.html">DECOUVRIR</a></button>
+                    </p> -->
+                        
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img
             class="w-100"
             src="img/all7.jfif"
@@ -487,11 +513,11 @@ background-image: url("./img/dalum2.jpg");
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
  
 
         </div>
-        <button
+        <!-- <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#header-carousel"
@@ -508,7 +534,7 @@ background-image: url("./img/dalum2.jpg");
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Suivant</span>
-        </button>
+        </button> -->
       </div>
     </div>
     <!-- Carousel End -->
@@ -936,9 +962,9 @@ background-image: url("./img/dalum2.jpg");
   
    
       
-      <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
+      <!-- <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
         <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 30px;left: 10;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
-    </a>
+    </a> -->
     </div>
     <!-- Footer End -->
 
