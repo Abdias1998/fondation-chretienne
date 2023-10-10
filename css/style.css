@@ -7,6 +7,12 @@
   margin: 20px auto; /* Centre la grille sur la page */
 }
 
+p {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 500;
+}
+
 .image {
   text-align: center;
   background-color: #fff;
@@ -21,7 +27,7 @@
 
 /* end */
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   font-weight: 700;
 }
@@ -179,7 +185,7 @@ button {
   color: green;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* Couleur rouge pour erreur */
 .error {
