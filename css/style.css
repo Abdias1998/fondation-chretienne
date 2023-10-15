@@ -123,9 +123,24 @@ p {
   background-size: cover;
   padding: 20px;
 }
+.box1s1 {
+  background-image: url("../img/don.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
 
 .box2s {
   background-image: url("../img/prayer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.box2s2 {
+  background-image: url("../img/action-de-grâce.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
