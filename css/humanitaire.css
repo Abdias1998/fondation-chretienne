@@ -1,7 +1,6 @@
 .parent {
   display: flex;
   justify-content: space-around;
-
   width: 100%;
   margin-bottom: 20px;
 
@@ -16,9 +15,9 @@
   width: 40%;
   /* Autres styles pour le premier enfant */
 }
-p {
+/* p {
   text-align: justify;
-}
+} */
 .child3 {
   background-image: url("../img/prison.png");
   background-size: contain;
@@ -120,7 +119,8 @@ p {
 
 .child2 {
   width: 55%;
-  padding: 10px;
+  padding: 5px;
+  text-align: left;
   /* Autres styles pour le deuxième enfant */
 }
 
@@ -143,11 +143,11 @@ p {
   .child12,
   .child13,
   .child14 {
-    width: 100vw;
+    width: 95vw;
     height: 300px;
   }
   .child2 {
-    width: 100vw;
+    width: 95vw;
     height: auto;
   }
   .flex-one {

@@ -7,12 +7,6 @@
   margin: 20px auto; /* Centre la grille sur la page */
 }
 
-p {
-  font-size: 1.3rem;
-  color: black;
-  font-weight: 500;
-}
-
 .image {
   text-align: center;
   background-color: #fff;
@@ -28,8 +22,10 @@ p {
 /* end */
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1em;
-  font-weight: 700;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: black;
 }
 /* Styles pour la fenêtre modale */
 .modal {
@@ -108,9 +104,7 @@ p {
   left: 0;
   margin: 20px;
 }
-p {
-  font-weight: 300;
-}
+
 .boxs {
   flex: 1;
   text-align: center;

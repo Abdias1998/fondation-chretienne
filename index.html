@@ -45,9 +45,7 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
     ></script>
     <style>
-      body{
-        overflow-x: hidden;
-      }
+      
  iframe {
         width: 100%;
         height: 300px;
@@ -88,15 +86,15 @@ button {
 .custom-button {
   display: inline-block;
         width: 236px;
-        height: 47px;
+        height: 40px;
         background-color: transparent;
-        border: 2px solid white; /* Bordure blanche de 2px */
+        border: 1px solid white; /* Bordure blanche de 2px */
         color: white;
         border-radius: 5px;
         text-align: center;
-        line-height: 47px;
+        line-height: 37px;
         margin-top: 7%;
-        font-size: 24px;
+        font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s; /* Transition pour le survol */
       }
@@ -143,13 +141,14 @@ button {
 
   
   .container {
-    width: 95%;
+    width: 100%;
     max-height: auto;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+    justify-content: center;
   }
   
   .box {
@@ -222,7 +221,7 @@ background-image: url("./img/dalum2.jpg");
   .large-box {
     height: 400px;
     width: 60%;
-    background-image: url("./img/about.jpg");
+    background-image: url("./img/courses-1.jpg");
     background-size: cover;
   }
   
@@ -321,7 +320,7 @@ background-image: url("./img/dalum2.jpg");
             tous</small
           >
           <small class="ms-4"
-            ><i class="fa fa-envelope me-2"></i>messagerie@lagraceparle.org</small
+            ><i class="fa fa-envelope me-2"></i>contact@lagraceparle.org</small
           >
         </div>
         <div class="col-lg-6 px-5 text-end">
@@ -478,7 +477,7 @@ background-image: url("./img/dalum2.jpg");
                     <h3 class="display-4 text-white mb-3 animated slideInDown">
                       Illuminant les âmes égarées, Diffusant l'amour de Jésus-Christ.
                     </h3>
-                    <a class="custom-button" href="ministere.html">DÉCOUVRIR</a>
+                    <!-- <a class="custom-button" href="ministere.html">DÉCOUVRIR</a> -->
                     <!-- <p class="fs-5 text-white-50 mb-5 animated slideInDown">
                       À travers l'amour du Christ, nous guidons les âmes
                       perdues, offrant espoir, réconfort et but pour illuminer
@@ -543,8 +542,8 @@ background-image: url("./img/dalum2.jpg");
    <div class="container">
     <div class="box tall-box">
       <div class="flex-container">
-        <span class="icon">&#9654;</span>
-        <button class="mui-button primary"><a target="_blank" href="https://www.youtube.com/@lagraceparle8000">VIDÉO</a></button>
+       
+        <button class="mui-button primary"> <span>&#9654;</span><a  style="padding-left: 10px;" target="_blank" href="https://www.youtube.com/@lagraceparle8000">VIDÉO</a></button>
       </div>
  
 
@@ -553,8 +552,8 @@ background-image: url("./img/dalum2.jpg");
     </div>
     <div class="box large-box">
       <div class="flex-container">
-        <span style="color: #fff;" class="icon">&#9994;</span>
-        <button class="mui-button secondary"><a href="humanitaire.html">HAND OF HOPE</a></button>
+      
+        <button class="mui-button secondary">  <span style="color: #fff;"  >&#9994;</span><a style="padding-left: 10px;" href="humanitaire.html">HAND OF HOPE</a></button>
       
       </div>
       <h1 class="title">Joignez-vous à nous pour façonner un monde meilleur.    <br>   <a class="btn btn-secondary" href="humanitaire.html">EN SAVOIR PLUS</a> <!-- Nouveau bouton --></h1>
@@ -566,9 +565,9 @@ background-image: url("./img/dalum2.jpg");
 
     <div class="box small-box">
       <div class="flex-container">
-        <span class="icon">&#128161;</span>
+     
    
-        <button class="mui-button success" style="color: #ccc;"><a href="newsletter.html">The Monthly mediation</a></button>
+        <button class="mui-button success" style="color: #ccc;">   <span >&#128161;</span><a style="padding-left: 10px;" href="newsletter.html">The Monthly mediation</a></button>
       
       </div>
     
@@ -577,10 +576,10 @@ background-image: url("./img/dalum2.jpg");
     </div>
     <div class="box tall-box important">
       <div class="flex-container">
-        <span class="icon">&#128218;</span> 
+
 
    
-        <button class="mui-button danger"> E-BOOK</button>
+        <button class="mui-button danger">         <span >&#128218;</span>  E-BOOK</button>
        
         
       </div>
@@ -603,7 +602,7 @@ background-image: url("./img/dalum2.jpg");
   <div class="parent">
     <div class="child1"></div>
     <div class="child2">
-      <h3  style="font-weight: 200;">
+      <h3  style="font-weight: 600;">
         Visite Émotionnelle à l'Orphelinat</h3>
       <p>
         Nous avons une mission profonde :
@@ -627,63 +626,70 @@ background-image: url("./img/dalum2.jpg");
         </a>
     </div>
   </div>
-       <!-- Donate Start -->
-       <div
-       class="container-fluid donate my-5 py-5"
-       data-parallax="scroll"
+        <!-- Donate Start -->
+  <div
+  class="container-fluid donate my-5 py-5"
+  data-parallax="scroll"
+  data-image-src="img/about.jpg"
+>
+  <div class="container py-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+        <div
+          class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+        >
+          Faire un don maintenant
+        </div>
+        <h1 class="display-6 text-white mb-5">
+          Merci pour les résultats obtenus avec vous
+        </h1>
    
-     
-      
-     >
-       <div class="container py-5">
-         <div class="row g-5 align-items-center">
-           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-             <div
-               class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-             >
-               Faire un don maintenant
-             </div>
-             <h1 class="display-6 text-white mb-5">
-               Merci pour les résultats obtenus avec vous
-             </h1>
-        
-           </div>
-           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-             <div class="h-100 bg-secondary p-5">
-     
-             <form id="donationForm">
-               <div class="row g-3">
+      </div>
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+        <div class="h-100 bg-secondary p-5">
+       <!-- <button>   <a class="pay-btn"
+        data-transaction-amount="971"
+        data-transaction-description="Buy my product"
+        data-customer-email="johndoe@gmail.com"
+        data-customer-lastname="Doe">Pay 1000 FCFA</a></button> -->
+        <form id="donationForm">
+          <div class="row g-3">
+          
+            <h1>Don En Nature</h1>
+            <div id="footerText" style="text-align: center; margin-top: 20px;">
+              <p style='text-align:justify'>Pour faire un don en nature au fondation, veuillez suivre ces étapes :</p>
+              <ol>
+                <li style='text-align:justify'>Remplissez le formulaire en choisissant l'option "Don et Soutien".</li>
+                <li style='text-align:justify'>Indiquez dans le message les détails du don en nature que vous souhaitez offrir.</li>
                
-                 <h3>Don En Nature</h3>
-                 <div id="footerText" style="text-align: center; margin-top: 20px;">
-                   <p style='text-align:center'>Pour faire un don en nature au fondation, veuillez suivre ces étapes :</p>
-                   <ol>
-                     <li style='text-align:center'>Remplissez le formulaire en choisissant l'option "Don et Soutien".</li>
-                     <li style='text-align:center'>Indiquez dans le message les détails du don en nature que vous souhaitez offrir.</li>
-                    
-                     <li style='text-align:center'> Nous vous contacterons pour coordonner la collecte du don en nature, en gardant à l'esprit l'amour et le respect qui nous unissent.</li>
-                     <li>Consulter le formulaire et suivez les étapes indiquez : <a href='contact.html#subscribeForm' style="color: #FFC300;">Remplissez le formulaire</a></li>
-                   </ol>
-                  
-                 </div>
-                 <h3>Don En Espèce</h3>
-                 <div class="col-12">
-                   <button class="mui-button secondary-button"><a href="https://me.fedapay.com/wP6ip9Oe" target="_blank">Faire un don</a></button>
-                
-                 </div>
-               </div>
-               </div>
-             </form>
+                <li style='text-align:justify'> Nous vous contacterons pour coordonner la collecte du don en nature, en gardant à l'esprit l'amour et le respect qui unissent notre communauté chrétienne.</li>
+                <li>Consulter le formulaire et suivez les étapes indiquez : <a href='contact.html#subscribeForm' style="color: #FFC300;">Remplissez le formulaire</a></li>
+              </ol>
             
-             </div>
-         </div>
-       </div>
-     </div>
-     <!-- Donate End -->
+            </div>
+            <h1>Don En Espèce</h1>
+            <div class="col-12">
+              <button style="background-color: #FFC300;"
+               ><a style="color: #fff;" href="https://me.fedapay.com/wP6ip9Oe" target="_blank">Faire un don</a></button>
+              <!-- <button id="donateButton" class="btn btn-primary px-5" style="height: 60px">
+               <a style="color: black; " target="_blank" href="https://me.fedapay.com/wP6ip9Oe">Faire un don</a>
+                <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </button> -->
+            </div>
+          </div>
+          </div>
+        </form>
        
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Donate End -->
   <div class="parent flex-one">
     <div class="child2">
-      <h3  style="font-weight: 200;">Brigade de Prière</h3>
+      <h3  style="font-weight: 600;">Brigade de Prière</h3>
       <p>
         La brigade de Prière est un programme qui se déroule au sein de notre
         centre, les Mardis, Vendredi, Dimanche et les Lundi en Direct sur la
@@ -700,7 +706,7 @@ background-image: url("./img/dalum2.jpg");
         class="btn btn-outline-primary py-2 px-3"
         href="ministere.html" target="_blank"
       >
-  En savoir plus 
+En savoir plus sur nos programmes
         <div
           class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
         >
@@ -765,7 +771,7 @@ background-image: url("./img/dalum2.jpg");
   <div class="parent">
     <div class="child9"></div>
     <div class="child2">
-      <h3  style="font-weight: 200;">Philharmonie La Grâce Parle </h3>
+      <h3  style="font-weight: 600;">Philharmonie La Grâce Parle </h3>
       <p>
         Notre branche de musique Philharmonie La Grâce Parle offre une variété
         de services pour répondre aux besoins de nos communautés. Nous
@@ -913,7 +919,7 @@ background-image: url("./img/dalum2.jpg");
           <br>
             <i class="fa fa-phone-alt me-3">+229 97 96 38 96/50505011</i>
             <br>
-            <i class="fa fa-envelope me-3">messagerie@lagraceparle.org</i>
+            <i class="fa fa-envelope me-3">contact@lagraceparle.org</i>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Liens rapides</h5>
@@ -957,7 +963,7 @@ background-image: url("./img/dalum2.jpg");
           </div>
         </div>
       </div>
-      <div id="live-icon" style="display: none;">      <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">  <img src="./img/live2.webp" style="z-index: 10000;  position: fixed;bottom: 100px;left: 10;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
+      <div id="live-icon" style="display: none;">      <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">  <img src="./img/live2.webp" style="z-index: 10000;  position: fixed;bottom: 10px;left: 10;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
       </div>
     
   
