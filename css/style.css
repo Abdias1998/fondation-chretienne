@@ -122,6 +122,7 @@ p {
   background-position: center;
   background-size: cover;
   padding: 20px;
+  position: relative;
 }
 .box1s1 {
   background-image: url("../img/don.avif");
@@ -129,6 +130,20 @@ p {
   background-position: center;
   background-size: cover;
   padding: 20px;
+}
+.box2s::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Couleur noire avec une opacité de 0.5 (ajustez l'opacité selon vos préférences) */
 }
 
 .box1s {
