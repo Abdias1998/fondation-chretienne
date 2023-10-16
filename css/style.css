@@ -94,7 +94,7 @@ p {
   justify-content: space-between;
   align-items: center;
   /* background-color: #f90; Fond orange */
-  margin: 20px;
+  margin: 0px;
   color: white;
   position: relative;
 }
@@ -116,8 +116,8 @@ p {
   align-items: center; /* Centre horizontalement */
 }
 
-.box1s {
-  background-image: url("../img/bible.avif");
+.box2s {
+  background-image: url("../img/bible.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -131,11 +131,13 @@ p {
   padding: 20px;
 }
 
-.box2s {
-  background-image: url("../img/prayer.jpg");
+.box1s {
+  background: linear-gradient(to right, #36373c, #2d313a, #11100c, #030200);
+
+  /* background-image: url("../img/prayer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   padding: 20px;
 }
 
@@ -150,7 +152,7 @@ p {
 @media (max-width: 768px) {
   .containers {
     flex-direction: column;
-    margin: 20px;
+    margin: 0px;
     height: 700px;
   }
   .colorTexte {
