@@ -18,7 +18,7 @@ Pour toute question, veuillez nous écrire un email.
 Votre équipe Joyce Meyer
 
 
- .\git-script.ps1 "Commit automatisé"
+ .\git-script.ps1 "Commit automatisé" 
 
  Nous avons distribué plus de 700 millions de repas en 2022 dans plus de 100 pays, leur fournissant ainsi de la nourriture et des produits de première nécessité. Cette année, nous visons à distribuer un milliard de repas. Rejoignez-nous en faisant un don à cette campagne.
 
