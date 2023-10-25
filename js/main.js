@@ -131,7 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("close-btn");
 
   modal.style.display = "block";
-
+  window.addEventListener("scroll", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
   closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
